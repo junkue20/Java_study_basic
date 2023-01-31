@@ -18,11 +18,10 @@ public class Main4 {
 		// 클래스명 date = new 클래스명 ();
 		Date date = new Date();
 		member.setUseDate(date);
-		
-		
+
 		String result = member.getUserId();
 		System.out.println(result);
-		
+
 		System.out.println(member.getUserId());
 	}
 

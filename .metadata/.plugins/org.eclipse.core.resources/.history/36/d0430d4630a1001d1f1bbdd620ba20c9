@@ -1,0 +1,19 @@
+package main1;
+
+import cls.KorScore;
+
+public class Main7 {
+
+	public static void main(String[] args) {
+		String[] s1 = { "가나다", "마바사", "아자차", "타파하" };
+		int[] s2 = { 20, 99, 70, 98, 100 };
+		
+		
+		KorScore obj = new KorScore();
+		obj.setStudent(s1);
+		obj.setScore(s2);
+		
+		System.out.println(obj.toString());
+	}
+
+}

@@ -2,9 +2,8 @@ package main1;
 
 public class Main2 {
 
-	
-	//정답은 없음. 해결하면 정답이고, 짧아야 하며 수정을 적게할 수 있어야 함. 게을러야 함.//
-	
+	// 정답은 없음. 해결하면 정답이고, 짧아야 하며 수정을 적게할 수 있어야 함. 게을러야 함.//
+
 	// 변수선언
 	public static void main(String[] args) {
 
@@ -13,7 +12,7 @@ public class Main2 {
 
 		int i; // 반복문 임시변수
 		int[] age = { 1, 2, 4, 5, 12 }; // 나이 변수가 5개 생성.
-		//age.length ==> 5가 됨. (갯수가 5개)
+		// age.length ==> 5가 됨. (갯수가 5개)
 		for (i = 0; i < age.length; i++) { // .length는 값의 길이를 구하는 명령어임.
 			System.out.println(age[i] + "");
 

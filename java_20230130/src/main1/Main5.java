@@ -18,7 +18,7 @@ public class Main5 {
 		brd.setBrdTitle("첫 게시글");
 		brd.setBrdContent("안녕하세요");
 		brd.setBrdWriter("박준규");
-		brd.setBrdHit(44091L);	
+		brd.setBrdHit(44091L);
 		// Date date = new Date (); 생략가능
 
 		brd.setBrdDate(new Date());
