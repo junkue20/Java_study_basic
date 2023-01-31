@@ -15,11 +15,10 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<!-- dependencies, /dependencies 사이에 dependency를 추가할 것 -->
 	<dependencies>
 		
-	<!-- Maven <dependency>파일들은
-		<dependencies>와 
-		</dependencies> 사이에 추가할 것! -->
 		
 		<dependency>
 			<groupId>org.mongodb</groupId>
