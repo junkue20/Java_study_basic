@@ -14,7 +14,7 @@ public class Main7 {
 		obj.setStudent(s1);
 		obj.setScore(s2);
 
-		// 3. 전체 합계를 구하기
+		// 3). 전체 합계를 구하기
 		int sum = obj.sumScore();
 		System.out.println("점수합은 = " + sum);
 		// 4. 평균
