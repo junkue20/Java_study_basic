@@ -9,7 +9,7 @@ import lombok.ToString;
 @Getter
 @ToString
 public class KorScore {
-
+	
 	private String[] student = new String[5];
 	private int[] score = new int[5];
 

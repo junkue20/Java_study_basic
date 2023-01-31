@@ -27,6 +27,7 @@ public class Member {
 	// 3. 메소드명 (Main4에서 전달한 값)
 	// public 는 보내는값, public void는 가져오는 값
 	// 메소드는 통로역할
+
 	public String getUserId() {
 		return userId;
 	}
