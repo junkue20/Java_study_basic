@@ -3,7 +3,7 @@ package main;
 public class Exam1 {
 
 	public static void main(String[] args) {
-		
+		int num = 5;
 		int i = 0; //반복문 임시 변수
 		int j = 0;
 		
