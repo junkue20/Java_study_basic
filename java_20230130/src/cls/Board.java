@@ -7,6 +7,9 @@
 // 조회수(long)brdHit,
 // 등록일자(Date)brdDate.
 
+
+//lombok 라이브러리 => 편리성, 연결성
+//오라클 라이브러리
 // 적절한 타입으로 필요한 항목을 만드세요.
 
 	//getter / setter
@@ -17,74 +20,20 @@ package cls;
 
 import java.util.Date;
 
-	
+@Getter
+@Setter
+@ToString
+
 public class Board {
-	long brdNo = 0L;
-	String brdTitle = "";
-	String brdContent = "";
-	String brdWriter = "";
 	
-	long brdHit = 0L;
+	private long brdNo = 0L;
+	private long brdHit =0L;
+	
+	private String brdTitle = "";
+	private String brdContent = "";
+	private String brdWriter = "";
+	
 	Date brdDate = null;
-	
-	public long getBrdNo() {
-		return brdNo;
-	}
-
-	public void setBrdNo(long brdNo) {
-		this.brdNo = brdNo;
-	}
-
-
-	public String getBrdTitle() {
-		return brdTitle;
-	}
-
-	public void setBrdTitle(String brdTitle) {
-		this.brdTitle = brdTitle;
-	}
-
-	public String getBrdContent() {
-		return brdContent;
-	}
-
-	public void setBrdContent(String brdContent) {
-		this.brdContent = brdContent;
-	}
-
-	public String getBrdWriter() {
-		return brdWriter;
-	}
-
-	public void setBrdWriter(String brdWriter) {
-		this.brdWriter = brdWriter;
-	}
-
-	public long getBrdHit() {
-		return brdHit;
-	}
-
-	public void setBrdHit(long brdHit) {
-		this.brdHit = brdHit;
-	}
-
-	public Date getBrdDate() {
-		return brdDate;
-	}
-
-	public void setBrdDate(Date brdDate) {
-		this.brdDate = brdDate;
-	}
-
-	@Override
-	public String toString() {
-		return "Board [brdNo=" + brdNo + ", brdTitle=" + brdTitle + ", brdContent=" + brdContent + ", brdWriter="
-				+ brdWriter + ", brdHit=" + brdHit + ", brdDate=" + brdDate + "]";
-	}
-	
-	
-	
-	
 }
 /*---------------------------------------------------------*/
 
