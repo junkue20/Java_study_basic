@@ -1,0 +1,16 @@
+package cls;
+
+import java.util.Date;
+
+// 내가 원하는 타입을 만듬. 실행하는 클래스 아님!!
+// 아이디, 암호, 이메일, 나이, 연락처, 가입일자 (설계상에서 정해지는 항목)
+public class Member {
+	
+	String userId = ""; // 또는 null로 나타내기도 함
+	String userPw = "";
+    String userEmail = "";
+    int useAge = 0; 
+    String userPhone = "000-0000-0000"; // 전화번호와 같은 경우 숫자가 아닌 문자가 있으며 , 첫자리 0이 지워지기때문에 문자로 해야함
+    Date useDate = null; // 클래스형의 타입을 만들어 놓음 
+    
+}
