@@ -8,9 +8,18 @@
     <fullyQualifiedTypeName name="cls.Member"/>
     <fullyQualifiedTypeName name="cls.Board"/>
     <fullyQualifiedTypeName name="cls.Item"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="lombok.Setter"/>
-    <fullyQualifiedTypeName name="lombok.Getter"/>
-    <fullyQualifiedTypeName name="lombok.ToString"/>
     <fullyQualifiedTypeName name="cls.KorScore"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="cls.Book"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="javax.naming.Name"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="lombok.ToString"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="cls.Register"/>
+    <fullyQualifiedTypeName name="cls.Student"/>
+    <fullyQualifiedTypeName name="cls.Professor"/>
+    <fullyQualifiedTypeName name="cls.Course"/>
 </qualifiedTypeNameHistroy>

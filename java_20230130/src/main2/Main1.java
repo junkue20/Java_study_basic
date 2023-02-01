@@ -1,24 +1,6 @@
-/*
-정수 타입	byte, short, int, long
-문자 타입   char
-실수 타입	float, double
-논리 타입	boolean
-
-정수 타입 Byte, Short, Integer, Long
-문자 타입 Character
-실수 타입 Float, Double,
-논리 타입 Boolean
-문자열 타입 : String
-날짜 타입 : Date
-
-
-Item, Board, Member
-클래스로 만들 수 있는 모든것..
-*/
 package main2;
 
 import java.util.Date;
-
 import cls.Item;
 
 public class Main1 {

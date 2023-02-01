@@ -13,8 +13,6 @@ public class Member {
 	String userPhone = "000-0000-0000"; // 전화번호와 같은 경우 숫자가 아닌 문자가 있으며 , 첫자리 0이 지워지기때문에 문자로 해야함
 	Date useDate = null; // 클래스형의 타입을 만들어 놓음
 
-	
-	
 	@Override
 	public String toString() {
 		return "Member [userId=" + userId + ", userPw=" + userPw + ", userEmail=" + userEmail + ", useAge=" + useAge

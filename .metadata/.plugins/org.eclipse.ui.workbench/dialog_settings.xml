@@ -8,4 +8,6 @@
 			<item value="org.eclipse.ui.Basic"/>
 		</list>
 	</section>
+	<section name="EditorSelectionDialog">
+	</section>
 </section>
