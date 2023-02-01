@@ -1,0 +1,35 @@
+/*
+정수 타입	byte, short, int, long
+문자 타입   char
+실수 타입	float, double
+논리 타입	boolean
+
+정수 타입 Byte, Short, Integer, Long
+문자 타입 Character
+실수 타입 Float, Double,
+논리 타입 Boolean
+문자열 타입 : String
+날짜 타입 : Date
+
+
+Item, Board, Member
+클래스로 만들 수 있는 모든것..
+*/
+package main2;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+		// 배열은 위치번호가 0부터 시작!
+		int [] a = new int[5]; // 배열이 5개 생성됨. 초기화 0으로
+		int [] b = {1,4,5,2,7}; // 배열이 5개 생성됨 1, 4, 5, 2, 7로 각가 초기화
+		
+		String str[] = new String[5]; // 문자열 배열이 5개 생성됨. 초기값은 null로 설정됨
+		
+		int i=0; // 반복문의 임시변수
+		for(i=0; i<b.length; i++) { // 0 1 2 3 4
+			System.out.print(b[i]+ " "); // 차례대로 출력
+		}
+	}
+
+}

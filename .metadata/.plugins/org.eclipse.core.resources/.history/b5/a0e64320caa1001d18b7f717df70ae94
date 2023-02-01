@@ -1,0 +1,23 @@
+package main2;
+
+import java.util.Date;
+
+import cls.Book;
+
+public class Main2 {
+
+	public static void main(String[] args) {
+
+		// 클래스명 객체명 = new 생성자();
+		Book book = new Book ();
+		
+		book.setNo(1);
+		book.setAuthor("신용권");
+		book.setCate('B');
+		book.setDate(new Date());
+		book.setPrice(0);
+		book.setTitle("자바");
+		System.out.println(book.toString());
+	}
+
+}
