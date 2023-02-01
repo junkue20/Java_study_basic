@@ -4,6 +4,11 @@ import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
+import javax.swing.JToolBar;
+import javax.swing.JComboBox;
+import javax.swing.JScrollBar;
+import javax.swing.JPasswordField;
+import javax.swing.JButton;
 
 
 
@@ -33,7 +38,7 @@ public class MainFrame extends JFrame{
 		mnNewMenu_1.add(mntmNewMenuItem_3_1);
 		
 		this.setSize(500, 400);
+		getContentPane().setLayout(null);
 		this.setVisible(true);
 	}
-
 }
