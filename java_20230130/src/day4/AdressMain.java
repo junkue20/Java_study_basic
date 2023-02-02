@@ -14,10 +14,16 @@ public class AdressMain {
 		//값 입력받기
 		
 		// 우편번호 5자리 확인
-		
+		address.invalidPostcode();
 		
 		// 날짜에서 월만 반환해보기
 		System.out.println(address.showMonth());
+		
+		
+		System.out.println(); // 줄바꿈
+		
+		// 전화번호에서 "-" 빼기
+		obj.changePhone();
 	}
 
 }

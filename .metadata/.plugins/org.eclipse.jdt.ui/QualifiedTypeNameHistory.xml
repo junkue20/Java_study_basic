@@ -11,16 +11,19 @@
     <fullyQualifiedTypeName name="cls.KorScore"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="cls.Book"/>
-    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
-    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="javax.naming.Name"/>
-    <fullyQualifiedTypeName name="lombok.Getter"/>
-    <fullyQualifiedTypeName name="lombok.Setter"/>
-    <fullyQualifiedTypeName name="lombok.ToString"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="cls.Register"/>
     <fullyQualifiedTypeName name="cls.Student"/>
     <fullyQualifiedTypeName name="cls.Professor"/>
     <fullyQualifiedTypeName name="cls.Course"/>
     <fullyQualifiedTypeName name="frame.Professor"/>
+    <fullyQualifiedTypeName name="java.lang.SafeVarargs"/>
+    <fullyQualifiedTypeName name="lombok.Getter"/>
+    <fullyQualifiedTypeName name="lombok.Setter"/>
+    <fullyQualifiedTypeName name="lombok.ToString"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="day4.Itemtable"/>
+    <fullyQualifiedTypeName name="day4.MemberTable"/>
 </qualifiedTypeNameHistroy>

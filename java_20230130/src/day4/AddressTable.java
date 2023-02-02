@@ -23,7 +23,7 @@ public class AddressTable {
 	private Date regdate = null;
 	private MemberTable memberid = null;
 	
-/*-----------------------------------------------------------*/
+	/*----------------------------------------------------------------------------------------*/
 	
 	// 코드는 1000~9999 사이인지 확인
 	public boolean invalidCode() {
@@ -45,14 +45,14 @@ public class AddressTable {
 
 	
 	// 우편번호가 5자리인지 확인
-	public String invalidPostcode() {
+	public void invalidPostcode() {
 		String result1 = "우편코드가 5자리입니다.";
 	    String result2 = "우편코드가 5자리가 아닙니다.";
 
 		if (this.postcode.length()== 5 ) {
-			return result1;
+			System.out.println(result1); 
 		}
-		return result2;
+			System.out.println(result2);
 	}
 
 	// 날짜에서 년만 반환하기 (문자로)
@@ -79,3 +79,4 @@ public class AddressTable {
 		return str;
     }
 }
+/*----------------------------------------------------------------------------------------*/

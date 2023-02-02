@@ -23,7 +23,7 @@ public class Itemtable {
 	private Date regdate = new Date(); // 등록일
 	private MemberTable memberid = null; // 판매자
 
-	// 행렬로 총 팔았던 물품들을 저장해야 할것같은데 아닌가
+/*----------------------------------------------------------------------------------------*/
 
 	// 수량이 n개 미만이면 n개로 변경하는 메소드
 	public long addQuantity(long n) { // n 개를 입력받음
@@ -36,40 +36,45 @@ public class Itemtable {
 	}
 
 	// 가격에 할인율만큼 빼서 리턴하는 메소드
-	public float disPrice(float f) { // 할인률을 입력받음
+	public float disPrice(float f) { // 할인률을 입력받음. 할인률은 소수점으로 곱해서 float!
 		this.price = (long) (this.price - (this.price * f)); // (원가 - 할인값)을 가격에 대입
-		System.out.println(this.price);
+		System.out.println(this.price); //결과출력
 		
-		return this.price;
+		return this.price; // 리턴~
 	}
 
 	// 총 판매금액을 리턴하는 메소드 (가격*수량)
 	public long totalPrice() {
-		long total = 0;
-		total = (this.price * this.quantity);
-		System.out.println(total);
-		return total;
+		return (this.price * this.quantity); // 바로 리턴해버려도 됩니다
 	}
 
-	/*
-	 * 내용이 20자 이상이면 ex)12345678901234567890... 으로 변환하는 메소드  // 20자 이전까지는 그냥 내용 출력
-	 * if문사용,content.length가 >=20 조건 사용                       // 20자 이후에는 ...
-	 */ 
-	public void numContent() {
-		if (this.content.length() < 20) {                  // {1234567890} 행렬을 만든 뒤, 내용이 20자 이상이 넘어가게 되면 글자
-		 System.out.println(this.content);
+	
+	 // 내용이 20자 이상이면 ex)12345678901234567890... 으로 변환하는 메소드
+	public String numContent() {
+		if (this.content.length() >= 20) { // if 내용길이가 20 이상이면~                 
+		 return (this.content.substring(0,20)+ "..."); //내용 뒤에 "..." 문자 추가해서 출력
 		}
-		else {                            
-			System.out.println("12345678901234567890...");  // 20자 이상부터는 위의 행렬 + 초과된만큼 "."출력
+		return this.content; // 아니면 그냥 바로 출력
 		}
-	}
+	
 
 	// 이름을 뒤집어서 반환하는 메소드
 	// if해서 i--로 역순 출력
 	public void revName() {
-		StringBuffer rev = new StringBuffer(this.name);
-        String reversedName = rev.reverse().toString();
+		/* 이런 방법도 있다!
+		 * 
+		 * int i = 0;
+		 * String ret = "" ; // 문자를 누적할 변수
+		 * for(i=this.name.length()-1; i>=0; i--){
+		 *     char tmp = this.name.charAt(i);
+		 *      ret += tmp;
+		 * }
+		 * return ret;
+		 */
+		StringBuffer rev = new StringBuffer(this.name); // StringBuffer라는 새로운함수에 현재 입력된 이름를 지정해주고
+        String reversedName = rev.reverse().toString(); // 'rev'를 .reverse를 활용하여 거꾸로 출력하도록 설정 
      
-			System.out.println(reversedName);
+			System.out.println(reversedName); // 쨘
 	}
 }
+/*----------------------------------------------------------------------------------------*/
