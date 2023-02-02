@@ -1,0 +1,28 @@
+package day4;
+
+import java.util.Date;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
+
+
+@Getter
+@Setter
+@ToString
+@AllArgsConstructor
+@NoArgsConstructor
+public class AddressTable {
+
+	private long code = 0;
+	private String address = null;
+	private String postcode = null;
+	private Date date = null;
+	private MemberTable memberid = null;
+	
+	
+	
+	public 
+}

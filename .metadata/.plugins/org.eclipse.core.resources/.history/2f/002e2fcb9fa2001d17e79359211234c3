@@ -1,0 +1,21 @@
+package day4;
+
+import java.util.Date;
+
+public class Day4Main1 {
+
+	public static void main(String[] args) {
+
+		//1. 객체 생성 (값 세팅)
+		MemberTable obj = new MemberTable("id", "Pw", "준규", 
+				"010-1234-1233", "C", new Date());
+
+		// 현재 클래스 값 확인용도\
+		System.out.println(obj.toString());
+		//2. 세팅된 이름값이 유효한지 확인하기
+	    
+	    
+		//3.
+	}
+
+}
