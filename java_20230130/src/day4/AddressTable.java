@@ -64,8 +64,6 @@ public class AddressTable {
 		return str.substring(0, 4); // substring를 이용하여 구간 출력. 년도만 출력
 	}
 	// 날짜에서 월만 반환하기 (문자로)
-
-
     public String showMonth() {
 		SimpleDateFormat month = new SimpleDateFormat("MM");
 		String str = month.format(regdate);

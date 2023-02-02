@@ -16,6 +16,7 @@ public class AdressMain {
 		// 우편번호 5자리 확인
 		
 		
+		// 날짜에서 월만 반환해보기
 		System.out.println(address.showMonth());
 	}
 
