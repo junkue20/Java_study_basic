@@ -22,4 +22,5 @@
     <fullyQualifiedTypeName name="cls.Student"/>
     <fullyQualifiedTypeName name="cls.Professor"/>
     <fullyQualifiedTypeName name="cls.Course"/>
+    <fullyQualifiedTypeName name="frame.Professor"/>
 </qualifiedTypeNameHistroy>
