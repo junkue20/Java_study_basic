@@ -59,6 +59,7 @@ public class AddressTable {
 	public String showYear() {
 		SimpleDateFormat year = new SimpleDateFormat("yyyy-MM-dd"); // 날짜를 바꾸기 위해서 다른 클래스가 필요함.
 		String str = year.format(regdate); //year에 현재 날자값 저장
+		String str1 = 
 		//2023-02-02
 		System.out.println(str); // str을 그대로 출력하나,
 		return str.substring(0, 4); // substring를 이용하여 구간 출력. 년도만 출력
