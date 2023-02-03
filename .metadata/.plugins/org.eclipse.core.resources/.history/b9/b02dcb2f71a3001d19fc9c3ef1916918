@@ -1,0 +1,24 @@
+package day5;
+
+import day4.MemberTable;
+
+//출력을 담당하는 클래스
+public class Output {
+	
+	//역시나 변수 x
+	
+	//void라 출력만 하고 반환만 하는것임.
+	public static void printMember(MemberTable member) { // 외부에서 member 값 받아옴
+		System.out.println("========================");
+		System.out.println("" + member.getId());
+		System.out.println("" + member.getPassword());
+		System.out.println("" + member.getName());
+		System.out.println("" + member.getPhone());
+		System.out.println("" + member.getRole());
+		System.out.println("" + member.getRegdate());
+		System.out.println("========================");
+
+		
+	}
+
+}

@@ -1,0 +1,17 @@
+package day5;
+
+public class Main3 {
+
+	public static void main(String[] args) {
+		
+		// 배열은 원시타입, Object타입 다 가능함.
+		// Object타입은 초기값이 null로 된다.
+		int[] a = new int[5]; // 배열 5개가 만들어짐. 초기값은 0
+		int[] b = {1,2,3,4,5}; // 5개 만들어짐. 초기값들은 지정된 상태
+		String c[] = new String[5]; //5개 만들어짐. 초기값은 null
+		Integer d[] = new Integer[5]; // 5개 만들어짐, 초기값 null
+		char[] f = new char[5];
+				System.out.println(b);
+	}
+
+}

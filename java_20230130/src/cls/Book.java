@@ -22,10 +22,10 @@ public class Book {
 	// == private Integer no1 = 0;
 	private int no = 0; // 책번호no
 	private String title = ""; // 책제목title
-	/* null과 "" 는 서로 다른것임! */
 	private String author = ""; // 저자 author
 	private long price = 12000; // 가격 12000
 	private char cate = 'A'; // 분류 cate'A','B','C'
 	private Date date = null; // 등록일자 date
+	
 
 }

@@ -1,0 +1,33 @@
+package day5;
+
+import java.util.Scanner;
+
+import day4.MemberTable;
+
+//입력을 담당하는 클래스
+public class Input {
+
+	// 변수X
+	// 입력받는 기능만
+	private String id = null;
+	private String password = null;
+	private String name = null;
+	private String phone = null;
+	private String role = null;
+
+	public static MemberTable inputData() {
+		Scanner in = new Scanner(System.in);
+		System.out.println("가입정보입력 -> 아이디, 암호, 이름, 연락처, 권한"); // 2 , 3 ,4 ,5 ,6 행렬을 각각 id , pw , name , phone, role에
+																// 저장해야함
+		String data = in.nextLine(); // a, b, 가나다, 010-0000-0000, C
+		// 문제 ,분할하고 각각의 데이터에 대해서 앞뒤에 공백이 있으면 제거
+		in.close();
+		System.out.println(data);
+		String[] str = data.split(",");
+		
+
+		return null;
+
+	}
+
+}

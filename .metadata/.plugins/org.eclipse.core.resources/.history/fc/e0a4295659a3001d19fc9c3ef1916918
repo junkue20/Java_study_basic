@@ -1,0 +1,18 @@
+package day5;
+
+public class Main1 {
+	public static void main(String[] args) {
+		// 객체 생성
+		Calc calc = new Calc();
+		
+		//필요한 메소드(기능) 호출
+//		long ret = calc.sumPlus(3, 4);
+//		System.out.println(ret);
+		
+		
+		float ret = calc.sumDiv(0, 10);
+		System.out.println(ret);
+	}
+
+	
+}
