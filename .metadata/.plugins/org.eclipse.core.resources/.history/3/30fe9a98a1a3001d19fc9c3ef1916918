@@ -55,7 +55,6 @@ public class Input {
 			char cate = data[4].charAt(0);
 
 			book = new Book(no, title, author, price, cate, new Date());
-			
 		}
 		return book;
 
