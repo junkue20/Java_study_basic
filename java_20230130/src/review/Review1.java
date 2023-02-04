@@ -1,27 +1,22 @@
-//-------------------반복숙달!-----------------------
-
-// 변수타입 정수형, 실수형, 문자, 논리형 .. 직접 생성하고자 하는 클래스
-// 조건문 전체 데이터에서 내가 필요한 정보를 추출(핕터)
-// 반복문 명렁어를 여러번수행. 배열의 데이터르 탐색하기 위한 용도.
-
-// 배열은 변수를 여러개 일괄적으로 만듬.(반복문)
-
-// 클래스, 상속, 정적클래스... 재너릭클래스...
-
-// idx를 통해 배열추가기능
-// 컬렉션 가변배열 개수가 자동적으로 바뀜. idx가 필요없게됨
-
-//------------------------------------------------
 package review;
 
 public class Review1 {
-
 	public static void main(String[] args) {
-
-		int a = 1;
-		int b = 2;
-		
-		System.out.println(a+b);
+		int a = 2;
+		int b = 1;
+		try {
+		System.out.println(divide(a, b));	     // 실행하려는 코드
+		}
+		catch (ArithmeticException e) {     // 예외 발생시 실행되는 코드
+			e.printStackTrace();     // 오류 메세지 출력
+		}
 	}
 
+	public static int divide(int a, int b) {
+		if (b == 1) {
+			throw new ArithmeticException("나눌 수 없습니다.");
+			
+		}
+		return a / b;
+	}
 }

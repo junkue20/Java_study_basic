@@ -1,5 +1,6 @@
 package day5;
 
+
 public class Main1 {
 	public static void main(String[] args) {
 		// 객체 생성 ( 객체를 만들어야 메소드 접근이 가능, 기능을 사용할 수 있음.
@@ -8,7 +9,7 @@ public class Main1 {
 		// 프로그램이 실행될떄 static 메소드가 있는 클래스는 자동으로 1개의 객체를 생성
 
 		Calc calc = new Calc();
-
+		
 		// 더하기
 		long ret2 = calc.sumPlus(3, 4);
 		System.out.println(ret2);
@@ -20,10 +21,11 @@ public class Main1 {
 		// 뺴기 + 오류 던지기
 		long ret4;
 		try {
-			ret4 = calc.sumMinus(10, 4);
+			ret4 = calc.sumMinus(10, 1);
 			System.out.println(ret4);
 		} catch (Exception e) {
 			e.printStackTrace();
+			
 		} // [오류가 올 것이다] 사용하려면 메인 클래스에서 throws Exception도 포함하여야 함!
 
 		// 곱하기

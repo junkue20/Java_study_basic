@@ -26,7 +26,7 @@ public class BookStore {
 	// 책 등록하는 메소드(함수) 필요
 	public void InsertBook(Book book) { // 왜 Book book이지??
 		if (idx >= 100) { // 보관하는 책이 100권까지 도달할 경우
-			System.out.println("책 추가 불가"); // 책추가불가 메세지 출력
+			System.out.println("책 추가 불가"); // 책 추가불가 메세지 출력
 		} else {
 			this.books[idx] = book;
 			idx++;
@@ -50,36 +50,37 @@ public class BookStore {
 	}
 
 	// 문제) 등록한 책의 가격을 전달받은 할인율 변경 메소드
-	public float discountPrice( float per ) {
-		for (int i= 0; i<idx; i++){
+	public float discountPrice(float per) {
+		for (int i = 0; i < idx; i++) {
 			long price = this.books[i].getPrice(); // 책의 값을 가져와야하기 떄문에 ".get"을 사용해야 함!!
-			//실수형 => 정수 => 결과값에 대한 손실이 일어날 수 있다.  형 변환은 항상 고려할것!!
-			//int에서 long으로의 변환은 괜찮지만, 반대로의 변환은 결과값에 손실이 발생할 수 있다.
+			// 실수형 => 정수 => 결과값에 대한 손실이 일어날 수 있다. 형 변환은 항상 고려할것!!
+			// int에서 long으로의 변환은 괜찮지만, 반대로의 변환은 결과값에 손실이 발생할 수 있다.
 			long price1 = (int) (price - (price * per));
 			this.books[i].setPrice(price1); // ".set" 을 이용하여 books 배열의 가격들을 변경해야 한다.
-			
+
 		}
 		return 1;
 	}
 
 	// 문제) 가격이 X원 이상인 책 수량을 반환하는 메소드
 	public void pirceQuery(int x) {
-		int priceOver =0; // 반환된 책 수를 나타낼 변수, 초기값은 0으로 지정
-		for (int i= 0; i<idx; i++) { // 반복문 추가로 책 모두 소환
-		if (this.books[i].getPrice()>= x); // 만약 책 가격이 x원 이상인 경우,
-		priceOver++; // 카운트를 1씩 올리고,
+		int priceOver = 0; // 반환된 책 수를 나타낼 변수, 초기값은 0으로 지정
+		for (int i = 0; i < idx; i++) { // 반복문 추가로 책 모두 소환
+			if (this.books[i].getPrice() >= x)
+				; // 만약 책 가격이 x원 이상인 경우,
+			priceOver++; // 카운트를 1씩 올리고,
 		}
-		System.out.println( x +"원 이상인 책 수량 : " + priceOver + "권"); // 카운트된만큼 값을 출력
-		
+		System.out.println(x + "원 이상인 책 수량 : " + priceOver + "권"); // 카운트된만큼 값을 출력
+
 	}
 
 	// 문제) 분류 코드가 전달받은 값의 항목만 출력하는 메소드
 	public void printCate(char cate) {
-		for(int i=0; i< idx ; i++) { // 반복문 추가
-			if(this.books[i].getCate() == cate) { //만약 책의 분류코드가 전달받은 값과 일치할때,
-				System.out.println(this.books[i].toString()); //저장된 책 목록 반환 
+		for (int i = 0; i < idx; i++) { // 반복문 추가
+			if (this.books[i].getCate() == cate) { // 만약 책의 분류코드가 전달받은 값과 일치할때,
+				System.out.println(this.books[i].toString()); // 저장된 책 목록 반환
 			}
 		}
-		
+
 	}
 }

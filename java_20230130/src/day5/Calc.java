@@ -1,5 +1,6 @@
 package day5;
 
+
 public class Calc {
 
 	// 변수를 만들지 않음!
@@ -32,10 +33,14 @@ public class Calc {
 		} 
 		catch (Exception e) {
 			System.err.println(e.getMessage());
-			e.printStackTrace(); // 오류를 추가할 수 있게 상세히 출력해줌. 개발자를 위해서! [ex) 서버 점검중입니다..]
+			e.printStackTrace();
+			// 오류를 추가할 수 있게 상세히 출력해줌. 개발자를 위해서! 
 			return 0.0f;
 			// 앞으로 습관적으로 오류를 발견하기 위하여 이러한 catch 함수를 사용할 것! (보통 개발자들은 메인으로 던지는 방식으로 많이 사용)
+		}finally {
+			System.out.println("오류발생");
 		}
+		
 	}
 
 	// 곱하기 메소드 static 정적 ,(객체를 많이 생성할수록 메모리, 자원을 많이 사용하게 됨)
