@@ -20,3 +20,5 @@ public class Review1 {
 		return a / b;
 	}
 }
+
+/*     오늘 집가서 pull 되어있나 꼭 확인해볼 것!       */
