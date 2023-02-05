@@ -3,25 +3,14 @@ package review;
 public class Review1 {
 
 	public static void main(String[] args) {
-		Name.print(); // 인스턴스를 생성하지 않아도 호출이 가능
+		for (int i = 1; i <= 5; i++) { // 1부터 5까지 반복
+			for (int j = 1; j <= i; j++) {
+				System.out.print("*"); // *을 출력
+			}
+			System.out.println();
 
-		Name name = new Name(); // 인스턴스 생성
-		name.print2(); // 인스턴스를 생성하여야만 호출이 가능
-	}
-
-}
-
-class Name {
-	static void print() { // 클래스 메소드
-		System.out.println("안녕하세요");
-	}
-
-	void print2() { // 인스턴스 메소드
-		System.out.println("반갑습니다.");
+		}
 	}
 }
-
-
-
 
 /* 오늘 집가서 pull 되어있나 꼭 확인해볼 것! */
