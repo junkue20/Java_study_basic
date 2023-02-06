@@ -5,12 +5,9 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="javax.xml.crypto.Data"/>
     <fullyQualifiedTypeName name="java.sql.Date"/>
-    <fullyQualifiedTypeName name="cls.Member"/>
     <fullyQualifiedTypeName name="cls.Board"/>
     <fullyQualifiedTypeName name="cls.Item"/>
     <fullyQualifiedTypeName name="cls.KorScore"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="cls.Book"/>
     <fullyQualifiedTypeName name="javax.naming.Name"/>
     <fullyQualifiedTypeName name="cls.Register"/>
     <fullyQualifiedTypeName name="cls.Student"/>
@@ -23,7 +20,17 @@
     <fullyQualifiedTypeName name="lombok.ToString"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="day4.Itemtable"/>
+    <fullyQualifiedTypeName name="cls.Member"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="day4.MemberTable"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="cls.Book"/>
+    <fullyQualifiedTypeName name="java.lang.Character"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="javax.sound.sampled.Line"/>
+    <fullyQualifiedTypeName name="javax.swing.JDialog"/>
+    <fullyQualifiedTypeName name="frame.JoinFrame"/>
+    <fullyQualifiedTypeName name="frame.StudentFrame"/>
+    <fullyQualifiedTypeName name="frame.EditProfessorFrame"/>
 </qualifiedTypeNameHistroy>
