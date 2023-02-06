@@ -1,0 +1,9 @@
+package day6;
+
+import lombok.Getter;
+
+@Getter
+@
+public class ItemDB {
+
+}

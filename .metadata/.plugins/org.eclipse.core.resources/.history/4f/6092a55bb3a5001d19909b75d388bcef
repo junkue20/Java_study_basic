@@ -1,0 +1,14 @@
+package day6;
+
+public class Main1 {
+
+	public static void main(String[] args) {
+
+		// 클래스명 객체명 = new 생성자 종료 ();
+		Exam1 ex = new Exam1(10);
+
+		// 메소드는 객체명을 통해 접근함. ex) 객체명.메소드명();
+		ex.printAge();
+
+	}
+}

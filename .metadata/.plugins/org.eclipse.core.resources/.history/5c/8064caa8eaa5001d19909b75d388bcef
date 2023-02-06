@@ -1,0 +1,34 @@
+package day6;
+
+import day4.Itemtable;
+
+public class ItemMain {
+
+	public static void main(String[] args) {
+		ItemDB iDB = new ItemDB();
+		
+	//dp연결하고 컬렉션을 items로
+		iDB.printItems();
+		System.out.println();
+		iDB.printItems("가나다");
+	
+	//물품등록
+	
+		
+	//전체물품 출력
+	iDB.printItems();
+		
+    // 물품코드를 이용한 수정	
+    // 물품명, 물품내용, 가격, 수량 변경가능
+	Itemtable itemtable = new Itemtable();
+	itemtable.setCode(1001);
+	itemtable.setName("abcd");
+	itemtable.setContent("010-3455-6778");
+	itemtable.setPrice(33);
+	itemtable.setQuantity(33);
+	
+	int ret = iDB.updateItem(itemtable); //성공하면 1, 실패시 -1
+	System.out.println(ret);
+	}
+
+}

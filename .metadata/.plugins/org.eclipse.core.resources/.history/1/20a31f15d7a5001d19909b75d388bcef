@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+//  킹 1개, 퀸 1개, 룩 2개, 비숍 2개, 나이트 2개, 폰 8개로 주어짐. 
+//  이보다 많거나 적으면 몇개 오차인지 출력할 것.
+public class Review1 {
+	public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+       int[] chess = sc.nextInt();
+        
+       int K = sc.nextInt();
+       int Q = sc.nextInt();
+       int R = sc.nextInt();
+       int B = sc.nextInt();
+       int N = sc.nextInt();
+       int P = sc.nextInt();
+       System.out.println(A - 543);
+    }
+}

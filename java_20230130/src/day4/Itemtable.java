@@ -21,7 +21,6 @@ public class Itemtable {
 	private long price = 0; // 물품가격
 	private long quantity = 0; // 물품수량
 	private Date regdate = new Date(); // 등록일
-	private MemberTable memberid = null; // 판매자
 
 /*----------------------------------------------------------------------------------------*/
 

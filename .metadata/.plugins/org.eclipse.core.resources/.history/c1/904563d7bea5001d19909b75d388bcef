@@ -1,0 +1,32 @@
+package day6;
+
+import org.bson.Document;
+
+import com.mongodb.client.MongoClient;
+import com.mongodb.client.MongoClients;
+import com.mongodb.client.MongoCollection;
+import com.mongodb.client.MongoDatabase;
+
+// 기능용 클래스
+// 몽고DB 연동
+
+public class MemberDB {
+
+	// 변수 X
+
+	// 생성자
+	public MemberDB() {
+		// 공통변수가 아니기 때문에 생성자 내부에서만 사용가능한 변수 생성.
+
+		// final 을 붙이면 생성 당시의 값으로 프로그램이 끝날때 까지 유지가 된다. 이유는 바꿀수 없기 때문.
+		// mongodb://아이디:비밀번호@주소:포트번호/디비명
+
+		final String url = "mongodb://id209:pw209@1.234.5.158:37017/db209";
+
+		// static클래스를 통해서 접속이 가능함. (import도 해주어야 함.)
+		MongoClient client = MongoClients.create(url);
+		MongoDatabase db = client.getDatabase("db209");
+		MongoCollection<Document> collecttion = db.getCollection("members");
+	}
+
+}

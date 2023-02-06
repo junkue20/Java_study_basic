@@ -1,0 +1,33 @@
+package day6;
+
+import java.util.Date;
+
+public class ItemMain {
+
+	public static void main(String[] args) {
+		ItemDB iDB = new ItemDB();
+		Item item = new Item(33L, "사과", "사과", 1234, 2345, new Date());
+		iDB.insertItem(item);
+
+
+		
+		/*
+		 * // DB연결하고 컬렉션을 items로 iDB.printItems(); System.out.println();
+		 * 
+		 * //물품등록 Item item = new Item(1000, "abc", "400", 10000, 10, new Date()); int
+		 * ret = iDB.insertItem(item); //성공하면 1, 실패시 -1 System.out.println(ret);
+		 * 
+		 * //전체물품 출력 iDB.printItems();
+		 */
+		// 물품코드를 이용한 수정
+		// 물품명, 물품내용, 가격, 수량 변경가능
+//	item = new Item(10000,"abc", "400", 10000, 10, new Date());
+
+		// 회원정보 삭제하기
+//		int ret1 = iDB.deleteItem(1000); // 정보가 삭제되어도 1이 뜨는 문제 해결필요
+//		System.out.println(ret1);
+
+		// __________________________________
+	}
+
+}
