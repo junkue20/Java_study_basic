@@ -6,8 +6,6 @@ public class Main1 {
 
 	public static void main(String[] args) {
 		MemberDB mDB = new MemberDB();
-		
-		mDB.printMembersName("가나다");
 	    // 회원정보 삭제하기
 //		int ret = mDB.deleteMember("bbb");  // 정보가 삭제되어도 1이 뜨는 문제 해결필요
 //		System.out.println(ret);

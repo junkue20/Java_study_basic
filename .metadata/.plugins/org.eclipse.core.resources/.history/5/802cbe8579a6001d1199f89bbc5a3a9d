@@ -43,10 +43,15 @@ public class MemberDB {
 	public void printMembersName(String searchName) {
 		// 키 또는 필드가 name인 것중에서 searchName과 정확하게 일치하는 필터
 		Bson filter = Filters.eq("name", searchName);
-		// 2개 있으니 2번 수행
-			printAction(filter);
+		MongoCursor<Document> list = this.collection.find(filter).iterator();
+		while (list.hasNext()) { // 2개 있으니 2번 수행
+			Document doc = list.next();
+			System.out.println("아이디 =>" + doc.getString("_id"));
+			System.out.println("비밀번호 =>" + doc.getString("password"));
+			System.out.println("나이 =>" + doc.getInteger("age"));
+			System.out.println("------------------------------------");
 		}
-	
+	}
 
 	// 전체 회원조회 메소드
 	public void printMembers() {
@@ -90,22 +95,12 @@ public class MemberDB {
 
 			return -1; // 오류시 보통 -1로 반환함!
 		}
+		
 
 	}
-
-	public void printAction(Bson filter) {
-		MongoCursor<Document> list = this.collection.find(filter).iterator();
-		while (list.hasNext()) {
-			Document doc = list.next();
-			System.out.println("아이디 =>" + doc.getString("_id"));
-			System.out.println("비밀번호 =>" + doc.getString("password"));
-			System.out.println("나이 =>" + doc.getInteger("age"));
-			System.out.println("------------------------------------");
-		}
-	}
-
+	
 	/*---------------------문제-------------------------*/
-
+	
 	// 문제1) 고객, 판매자만 조회하는 필터링
 	// 조건과 같으면 .eq
 	public void printMembersRole(String searchRole) {
@@ -122,6 +117,17 @@ public class MemberDB {
 		Bson filter = Filters.gte("age", n);
 
 		printAction(filter);
+	}
+
+	public void printAction(Bson filter) {
+		MongoCursor<Document> list = this.collection.find(filter).iterator();
+		while (list.hasNext()) {
+			Document doc = list.next();
+			System.out.println("아이디 =>" + doc.getString("_id"));
+			System.out.println("비밀번호 =>" + doc.getString("password"));
+			System.out.println("나이 =>" + doc.getInteger("age"));
+			System.out.println("------------------------------------");
+		}
 	}
 
 	// 회원정보 수정하기. 이름, 연락처, 나이정보 (암호는 변경 불가능.)
