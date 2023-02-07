@@ -1,0 +1,10 @@
+package day7;
+
+public class BoardMain {
+
+	public static void main(String[] args) {
+		BoardDAOImpl obj = new BoardDAOImpl();
+		
+	}
+
+}

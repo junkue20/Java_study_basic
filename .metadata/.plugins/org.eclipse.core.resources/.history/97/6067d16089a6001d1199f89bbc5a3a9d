@@ -1,0 +1,47 @@
+package day7;
+
+import java.util.List;
+
+public class BoardDAOImpl implements BoardDAO {
+
+	public BoardDAOImpl() {
+		super();
+	}
+
+	@Override
+	public int insertBoard(Board board) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateBoard(Board board) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteBoard(long no) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Board> selectBoardList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Board> selectBoardhitList(long hit) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Board selectBoardOne(long no) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

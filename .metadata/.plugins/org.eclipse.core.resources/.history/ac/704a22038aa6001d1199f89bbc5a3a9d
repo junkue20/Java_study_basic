@@ -1,0 +1,59 @@
+package day7;
+
+import java.util.List;
+
+import com.mongodb.client.MongoClients;
+
+public class BoardDAOImpl implements BoardDAO {
+
+	// 아이디:암호@서버주소:포트번호/DB명
+	final String url = "mongodb://id209:pw209@1.234.5.158:37017/db209";
+
+	public BoardDAOImpl() {
+		try {
+			// 설계도면 객체 = 클래스명.정적메소드()
+			// 정적메소드는 객체가 1개만 생성되기때문에 리소스 낭비가 없다.
+			MongoClient client = MongoClients.create(url);
+		} catch (Exception e) {
+
+		}
+
+	}
+
+	@Override
+	public int insertBoard(Board board) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateBoard(Board board) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int deleteBoard(long no) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public List<Board> selectBoardList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Board> selectBoardhitList(long hit) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Board selectBoardOne(long no) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

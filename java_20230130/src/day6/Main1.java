@@ -16,15 +16,15 @@ public class Main1 {
 	// DB에 접속하고 members collection 접속
 /*		mDB.printMembers();
 		System.out.println();
-		mDB.printMembersName("가나다"); */
-/*	 문제 1 실행
+		mDB.printMembersName("가나다"); 
+	 문제 1 실행
 	mDB.printMembersRole("C");
 	System.out.println();
 	// 문제 2 실행
-	mDB.printMembersAge(100);   */
+	mDB.printMembersAge(100);   
 	// 2. 회원가입하고 싶은 임시 데이터 (아이디,암호,이름,나이,연락처,권한,현재시간)
 	
-/*	// 회원정보 수정하기
+	// 회원정보 수정하기
 	Member member = new Member();
 	member.setId("bbb");
 	member.setName("abcd");

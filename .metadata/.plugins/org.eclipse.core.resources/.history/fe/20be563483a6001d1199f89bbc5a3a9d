@@ -1,0 +1,33 @@
+package day7;
+
+public class MyInter1 implements MyListener {
+
+	@Override
+	public void work() {
+		System.out.println("myinter1 = > work");
+	}
+
+	@Override
+	public void study() {
+		System.out.println("myinter1 = > study");
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void hard() {
+		System.out.println("myinter2 = > hard");
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void soft() {
+		System.out.println("myinter2 = > soft");
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}
