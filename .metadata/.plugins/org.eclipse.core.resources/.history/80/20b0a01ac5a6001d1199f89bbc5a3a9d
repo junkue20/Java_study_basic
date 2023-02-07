@@ -26,18 +26,18 @@ public class BoardMain {
 		/*-----------------------hit 이하의 게시물만 조회-----------------------*/
 
 		// 목록으로 전송됨. 목록은 반드시 반복문을 통해서 1개씩 출력해야 함.
-//		long num = 10;
-//
-//		List<Board> list = obj.selectBoardHitList(num);
-//
-//		if (list.isEmpty()) {  // list가 현재 아무것도 지정되지 않은 ArrayList() 이기 때문에 .isEmpty 라는  
-//			System.out.println(num + "이하의 값이 없음.");
-//		} else {
-//			for (Board one : list) {
-//				System.out.println(one.getBrdNo() + ", " + one.getBrdTitle() + ", " + one.getBrdHit() + ", "
-//						+ one.getBrdWriter() + ", " + one.getBrdDate());
-//			}
-//		}
+		long num = 10;
+
+		List<Board> list = obj.selectBoardHitList(num);
+
+		if (list.isEmpty()) {
+			System.out.println(num + "이하의 값이 없음.");
+		} else {
+			for (Board one : list) {
+				System.out.println(one.getBrdNo() + ", " + one.getBrdTitle() + ", " + one.getBrdHit() + ", "
+						+ one.getBrdWriter() + ", " + one.getBrdDate());
+			}
+		}
 
 		/*-------------------------전체글 조회--------------------------*/
 
