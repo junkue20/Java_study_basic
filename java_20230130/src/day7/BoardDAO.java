@@ -17,8 +17,9 @@ public interface BoardDAO {
 	public List<Board> selectBoardList();
 
 	// 게시글 수에 따른 조회 ex)n보다 큰 경우
-	public List<Board> selectBoardhitList(long hit);
+	public List<Board> selectBoardHitList(long hit);
 
 	// 게시글 1개 조회
 	public Board selectBoardOne(long no);
+
 }

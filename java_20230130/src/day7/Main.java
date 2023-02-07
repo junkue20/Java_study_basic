@@ -31,13 +31,13 @@ public class Main {
 //		}
 //		arr.size(); // 3이다.
 		
-		MyListener ml = new MyInter1();
-		MyListener m2 = new MyInter2();
-//
-		Print p = new Print();
-		p.action(m2);
-		
-		new Frame1();
+//		MyListener ml = new MyInter1();
+//		MyListener m2 = new MyInter2();
+////
+//		Print p = new Print();
+//		p.action(m2);
+//		
+//		new Frame1();
 		
 		
 //		
