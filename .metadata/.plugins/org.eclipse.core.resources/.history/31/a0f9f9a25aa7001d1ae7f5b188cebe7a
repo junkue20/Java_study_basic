@@ -1,0 +1,17 @@
+package day8;
+
+import javax.swing.JDialog;
+import java.awt.BorderLayout;
+import javax.swing.JTable;
+
+public class BookSelectListFrame extends JDialog{
+	private JTable table;
+	public BookSelectListFrame() {
+		getContentPane().setLayout(new BorderLayout(0, 0));
+		
+		table = new JTable();
+		getContentPane().add(table, BorderLayout.CENTER);
+	}
+	
+	
+}

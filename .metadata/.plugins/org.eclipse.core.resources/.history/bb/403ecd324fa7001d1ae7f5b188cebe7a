@@ -1,0 +1,20 @@
+package day8;
+
+// 환경설정과 관련된 속성 정보를 보관하는 클래스 Properties
+// 외부에서 사용하기위해 public, 고유값으로 지정하기 위해 static을 사용
+public class Config {
+
+	// 서버 접속정보
+	public static final String url 
+	= "mongodb://id209:pw209@1.234.5.158:37017/db209";
+
+	// 사용할 수 있는 정보
+	public static final int MAX = 10000;
+
+	// 게시글의 숫자를 10개
+	public static final int BOARDMAX = 10;
+	
+	// 데이터베이스 명칭
+	public static final String DBNAME = "db209";
+
+}
