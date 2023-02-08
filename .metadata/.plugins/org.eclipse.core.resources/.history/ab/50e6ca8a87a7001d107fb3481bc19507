@@ -29,7 +29,8 @@ public class BookSelectListPageFrame extends JDialog implements ItemListener {
 		// 중앙의 table위치
 		table = new JTable();
 		String[] colume = { "번호", "제목", "저자", "가격", "분류", "날짜" };
-		this.model = new DefaultTableModel(colume, 0);
+		this.model = new DefaultTableModel();
+		DefaultTableModel model = new DefaultTableModel(colume, 0);
 
 		List<Book> list = bookDB.selectBookListPage(1);
 		for (Book book : list) {

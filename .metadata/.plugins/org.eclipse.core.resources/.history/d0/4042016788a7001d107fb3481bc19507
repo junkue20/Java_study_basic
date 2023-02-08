@@ -21,7 +21,9 @@ public class Main {
 //		new BookSelectListFrame();
 		
 		// 책 10개씩조회
-		new BookSelectListPageFrame();
+//		new BookSelectListPageFrame();
+		
+		top
 		
 		
 		

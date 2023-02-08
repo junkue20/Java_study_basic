@@ -19,7 +19,7 @@ public class BookSelectListPageFrame extends JDialog implements ItemListener {
 
 	private JTable table = null;
 	private JComboBox<String> combo;
-	private DefaultTableModel model;
+	 DefaultTableModel model;
 	private BookDB bookDB = new BookDBImpl();
 
 	public BookSelectListPageFrame() {
@@ -30,6 +30,7 @@ public class BookSelectListPageFrame extends JDialog implements ItemListener {
 		table = new JTable();
 		String[] colume = { "번호", "제목", "저자", "가격", "분류", "날짜" };
 		this.model = new DefaultTableModel(colume, 0);
+//		DefaultTableModel model = new DefaultTableModel();
 
 		List<Book> list = bookDB.selectBookListPage(1);
 		for (Book book : list) {

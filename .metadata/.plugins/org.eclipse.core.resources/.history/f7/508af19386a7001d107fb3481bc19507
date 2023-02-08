@@ -23,20 +23,21 @@ public class BookSelectListPageFrame extends JDialog implements ItemListener {
 	private BookDB bookDB = new BookDBImpl();
 
 	public BookSelectListPageFrame() {
+//		
+//		List<Book> list = bookDB.selectBookListPage(1);
+//		for (Book book : list) {
+//			String[] data = { book.getNo() + "", book.getTitle() + "", book.getAuthor() + "", book.getPrice() + "",
+//					book.getCate() + "", book.getDate() + "" };
+//			model.addRow(data);
+//		}
+//		table.setModel(model);
+		
 		// 전체 레이아웃 BoardLayout
 		getContentPane().setLayout(new BorderLayout(0, 0));
 
 		// 중앙의 table위치
 		table = new JTable();
-		String[] colume = { "번호", "제목", "저자", "가격", "분류", "날짜" };
-		this.model = new DefaultTableModel(colume, 0);
-
-		List<Book> list = bookDB.selectBookListPage(1);
-		for (Book book : list) {
-			String[] data = { book.getNo() + "", book.getTitle() + "", book.getAuthor() + "", book.getPrice() + "",
-					book.getCate() + "", book.getDate() + "" };
-			model.addRow(data);
-		}
+		DefaultTableModel model = new DefaultTableModel();
 		table.setModel(model);
 		JScrollPane jScrollPane = new JScrollPane(table);
 		getContentPane().add(jScrollPane, BorderLayout.CENTER);

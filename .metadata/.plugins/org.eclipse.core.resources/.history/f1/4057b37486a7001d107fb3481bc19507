@@ -5,10 +5,6 @@ import java.util.Vector;
 
 import javax.swing.table.DefaultTableModel;
 
-import day8.frame.BookInsertFrame;
-import day8.frame.BookSelectListFrame;
-import day8.frame.BookSelectListPageFrame;
-
 public class Main {
 
 	//화면을 실행시키는 역활만 수행 

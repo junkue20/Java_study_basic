@@ -23,11 +23,6 @@ public class BookSelectListPageFrame extends JDialog implements ItemListener {
 	private BookDB bookDB = new BookDBImpl();
 
 	public BookSelectListPageFrame() {
-		// 전체 레이아웃 BoardLayout
-		getContentPane().setLayout(new BorderLayout(0, 0));
-
-		// 중앙의 table위치
-		table = new JTable();
 		String[] colume = { "번호", "제목", "저자", "가격", "분류", "날짜" };
 		this.model = new DefaultTableModel(colume, 0);
 
@@ -37,6 +32,14 @@ public class BookSelectListPageFrame extends JDialog implements ItemListener {
 					book.getCate() + "", book.getDate() + "" };
 			model.addRow(data);
 		}
+		
+		
+		// 전체 레이아웃 BoardLayout
+		getContentPane().setLayout(new BorderLayout(0, 0));
+
+		// 중앙의 table위치
+		table = new JTable();
+		DefaultTableModel model = new DefaultTableModel();
 		table.setModel(model);
 		JScrollPane jScrollPane = new JScrollPane(table);
 		getContentPane().add(jScrollPane, BorderLayout.CENTER);
