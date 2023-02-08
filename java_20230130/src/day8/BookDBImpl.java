@@ -88,10 +88,37 @@ public class BookDBImpl implements BookDB {
 
 	}
 
+	// 데이터를 최소 21 이상을 추가하세요
+	// BookSelectListPageFrame.java
 	@Override
-	public List<Book> selectBookListPage(int page) { // 책 10개씩 조회
+	public List<Book> selectBookListPage(int page) {
+		try {
+			// 반환 타입을 위한 빈 배열 객체 생성(비어 있음)
+			List<Book> list = new ArrayList<Book>();
 
-		return null;
+			Bson sort = Filters.eq("_id", -1);// 책번호를 기준으로 내림차순(-1)
+			// page = 1 => 0 page= 2 =>10, page=3 => 20
+			FindIterable<Document> docs = this.books.find().sort(sort).skip(10 * (page - 1)).limit(10);
+                                                                                           //limit이 표시수량
+			// FindIterable<Document> docs = this.books.find();
+			// docs의 값을 list로 다 복사하기
+			for (Document doc : docs) {
+				Book book = new Book();
+				book.setNo(doc.getInteger("_id"));
+				book.setTitle(doc.getString("title"));
+				book.setAuthor(doc.getString("author"));
+				book.setPrice(doc.getLong("price"));
+				book.setCate(doc.getString("cate").charAt(0)); // String -> char
+				book.setDate(doc.getDate("regdate"));
+
+				list.add(book); // 반복 횟수 만큼 list에 추가하기
+			}
+			return list;
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+		}
+
 	}
 
 	@Override

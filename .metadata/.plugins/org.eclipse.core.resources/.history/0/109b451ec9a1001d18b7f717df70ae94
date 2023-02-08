@@ -1,8 +1,0 @@
-package cls;
-
-
-//책번호no, 책제목title, 저자 author, 가격 12000, 분류 cate'A','B','C', 등록일자 date
-public class Book {
-	private String no = null;
-
-}
