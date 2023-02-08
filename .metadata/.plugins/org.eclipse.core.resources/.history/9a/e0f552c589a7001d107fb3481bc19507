@@ -1,0 +1,42 @@
+package com.example;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JButton;
+
+public class MyFrame extends JFrame implements ActionListener{
+	private JTextField textField;
+	
+	public MyFrame() {
+		getContentPane().setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(27, 54, 96, 21);
+		getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JButton btnNewButton = new JButton("New button");
+		btnNewButton.setBounds(32, 158, 91, 23);
+		getContentPane().add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("버튼2");
+		btnNewButton_1.setBounds(160, 158, 91, 23);
+		getContentPane().add(btnNewButton_1);
+		
+		btnNewButton.addActionListener(this);
+		btnNewButton_1.addActionListener(this);
+		
+		this.setSize(300, 500);
+		this.setVisible(true);
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		System.out.println(e.getID());
+		System.out.println(e.getActionCommand());
+	}
+}
