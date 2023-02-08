@@ -21,6 +21,7 @@
 		<dependencies>와 
 		</dependencies> 사이에 추가할 것! -->
 		
+		<!-- MongoDB -->
 		<dependency>
 			<groupId>org.mongodb</groupId>
 			<artifactId>mongodb-driver-sync</artifactId>
