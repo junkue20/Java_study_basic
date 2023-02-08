@@ -19,7 +19,7 @@ public class BookDBImpl implements BookDB {
 
 	private MongoCollection<Document> sequence = null;
 	private MongoCollection<Document> books = null;
-
+	
 	// 생성자 먼저 생성!
 	public BookDBImpl() { // DB에 책 항목 생성
 		try {// 몽고DB -> 접속URL -> DB이름
@@ -89,7 +89,8 @@ public class BookDBImpl implements BookDB {
 	}
 
 	// 데이터를 최소 21 이상을 추가하세요
-	// BookSelectListPageFrame.java
+	// BookSelectListPageFrame.java 생성
+	// 10권씩 보여주는 페이지
 	@Override
 	public List<Book> selectBookListPage(int page) {
 		try {

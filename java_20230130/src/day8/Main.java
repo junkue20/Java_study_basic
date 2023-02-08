@@ -10,13 +10,13 @@ public class Main {
 	public static void main(String[] args) {
 
 		// 책 추가하기
-//		new BookInsertFrame();
+		new BookInsertFrame();
 
 		// 책 전체조회
-//		new BookSelectListFrame();
+		new BookSelectListFrame();
 
 		// 책 10개씩조회
-//		new BookSelectListPageFrame();
+		new BookSelectListPageFrame();
 		
 
 		// 책 한번에 여러권 넣기 (23권)
