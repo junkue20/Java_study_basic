@@ -5,16 +5,22 @@ package day8;
 public class Config {
 
 	// 서버 접속정보
-	public static final String URL 
-	= "mongodb://id209:pw209@1.234.5.158:37017/db209";
+	public static final String URL = "mongodb://id209:pw209@1.234.5.158:37017/db209";
 
 	// 사용할 수 있는 정보
 	public static final int MAX = 10000;
 
 	// 게시글의 숫자를 10개
 	public static final int BOARDMAX = 10;
-	
+
 	// 데이터베이스 명칭
 	public static final String DBNAME = "db209";
+
+	// 답글 컬렉션 명칭 (테이블)
+	public static final String REPLYCOL = "replies";
+	
+	// 시퀀스용 컬렉션 명칭(테이블)
+	public static final String RESEQUENCECOL = "sequence";
+
 
 }

@@ -36,7 +36,6 @@ public class Board {
 	private String brdTitle = "";
 	private String brdContent = "";
 	private String brdWriter = "";
-	
 	Date brdDate = null;
 }
 /*---------------------------------------------------------*/

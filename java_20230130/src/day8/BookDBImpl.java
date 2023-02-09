@@ -124,8 +124,15 @@ public class BookDBImpl implements BookDB {
 
 	@Override
 	public int deleteBook(int no) { // 책 삭제
-
-		return 0;
+		try {
+		
+			return 1;
+		}
+		catch (Exception e) {
+			e.printStackTrace();
+			return -1;
+		}
+		
 	}
 
 	@Override
