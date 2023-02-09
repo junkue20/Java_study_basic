@@ -1,7 +1,0 @@
-package frame;
-
-import javax.swing.JFrame;
-
-public class EditStudentFrame extends JFrame{
-
-}
