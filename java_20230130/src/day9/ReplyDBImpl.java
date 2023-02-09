@@ -17,8 +17,6 @@ import com.mongodb.client.result.DeleteResult;
 import com.mongodb.client.result.InsertOneResult;
 import com.mongodb.client.result.UpdateResult;
 
-import day7.Board;
-import day8.Book;
 import day8.Config;
 
 public class ReplyDBImpl implements ReplyDB {
@@ -27,6 +25,7 @@ public class ReplyDBImpl implements ReplyDB {
 	private MongoCollection<Document> sequence = null;
 	private MongoCollection<Document> replies = null;
 
+	// 생성자
 	// DB접속 및 컬렉션 선택
 	public ReplyDBImpl() {
 		try {// 몽고DB -> 접속URL -> DB이름
@@ -49,11 +48,11 @@ public class ReplyDBImpl implements ReplyDB {
 //	}
 	/*-----------------------------------------------------------------------------------------------------*/
 
+	// 댓글 입력
 	@Override
 	public short insertReply(Reply reply) throws Exception {
 
-		 Document doc = sequence.findOneAndUpdate(Filters.eq("_id", "SEQ_REPLY_NO"),
-		 Updates.inc("idx", 2));
+		Document doc = sequence.findOneAndUpdate(Filters.eq("_id", "SEQ_REPLY_NO"), Updates.inc("idx", 2));
 		// Document{{_id=SEQ_REPLY_NO, idx=210}}
 		System.out.println(doc.toString());
 		long idx = doc.getInteger("idx");
@@ -75,24 +74,26 @@ public class ReplyDBImpl implements ReplyDB {
 	}
 	/*-----------------------------------------------------------------------------------------------------*/
 
+	// 수정
 	@Override
 	public short updateReply(Reply reply) throws Exception {
+		
 		// 변경하고자 하는 항목의 조건
-				Bson filter = Filters.eq("_id", reply.getNo());
-					// 변경할 항목들 "제목, 내용, 작성자"
-				
-					Bson update1 = Updates.set("content", reply.getContent());
-					Bson update2 = Updates.set("writer", reply.getWriter());
-					// updateOne (조건, 변경값) => 변경값이 하나의 Bson에만 가능.. combine
-					Bson update = Updates.combine(update1, update2, update3);
-					UpdateResult result = this.replies.updateOne(filter, update);
-					if (result.getModifiedCount() == 1) {
-						return 1;
-					}
-						
+		Bson filter = Filters.eq("_id", reply.getNo());
+		// 변경할 항목들 "내용, 작성자"
+		Bson update1 = Updates.set("content", reply.getContent());
+		Bson update2 = Updates.set("writer", reply.getWriter());
+		// updateOne (조건, 변경값) => 변경값이 하나의 Bson에만 가능.. combine
+		Bson update = Updates.combine(update1, update2);
+		UpdateResult result = this.replies.updateOne(filter, update);
+		if (result.getModifiedCount() == 1) {
+			return 1;
+		}
+		return 0;
 	}
 	/*-----------------------------------------------------------------------------------------------------*/
 
+	// 삭제
 	@Override
 	public short deleteReply(long no) throws Exception {
 

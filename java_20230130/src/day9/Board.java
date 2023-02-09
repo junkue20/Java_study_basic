@@ -1,6 +1,7 @@
-package day7;
+package day9;
 
 import java.util.Date;
+import java.util.List;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -18,5 +19,8 @@ public class Board {
 	private String brdWriter = "";
 	private long brdHit = 100L;
 	private Date brdDate = null;
+	
+	private int replyCount = 0; // 답글개수를 보관할 변수
+	private List<Long> replyNolist = null;
 
 }

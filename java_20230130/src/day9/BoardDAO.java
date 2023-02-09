@@ -1,8 +1,11 @@
-package day7;
+package day9;
 
 import java.util.List;
 
 public interface BoardDAO {
+
+	// 답글의 갯수가 n개인 게시글 조회
+	public List<Board> selectBoardReplyCount(int n);
 
 	// 게시글 추가
 	public int insertBoard(Board board);

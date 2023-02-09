@@ -2,7 +2,6 @@ package day9;
 
 import java.util.Date;
 
-import day7.Board;
 import lombok.Data;
 
 //import lombok.AllArgsConstructor;
