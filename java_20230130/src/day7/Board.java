@@ -16,7 +16,7 @@ public class Board {
 	private String brdTitle = "";
 	private String brdContent = "";
 	private String brdWriter = "";
-	private long brdHit = 0L;
+	private long brdHit = 100L;
 	private Date brdDate = null;
 
 }
