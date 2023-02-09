@@ -13,6 +13,6 @@ public interface ReplyDB {
 
 	public Reply selectReplyOne( long no );
 
-	public List<Reply> selectReplyList();
+	public List<Reply> selectReplyList(long boardNo);
 
 }
