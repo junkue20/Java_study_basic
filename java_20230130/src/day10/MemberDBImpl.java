@@ -20,7 +20,7 @@ public class MemberDBImpl implements MemberDB {
 	// 클래스 전역 변수 (생성자, 메소드 모든곳에서 사용가능)
 	private MongoCollection<Document> members = null;
 
-	// DB 연동 및 컬렉션 연결하기
+	// -------------DB 연동 및 컬렉션 연결하기 (생성자)------------------
 	public MemberDBImpl() {
 		this.members = MongoClients.create(Config.URL).getDatabase(Config.DBNAME).getCollection(Config.MEMBERCOL);
 	}

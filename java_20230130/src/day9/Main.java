@@ -43,10 +43,9 @@ public class Main {
 
 			// 답글번호 한개 조회하기
 			// 입력기능 추가
-//			System.out.print("조회 할 답글번호를 눌러주세요. : ");
-//			Scanner sc = new Scanner(System.in);
-//            
 //			ReplyDB replyDB = new ReplyDBImpl();
+//			Scanner sc = new Scanner(System.in);
+//			System.out.print("조회 할 답글번호를 눌러주세요. : ");
 //		    Reply reply = replyDB.selectReplyOne(sc.nextLong()); // 해당 번호의 글 불러오기
 //		    if(reply!=null) {
 //			System.out.println("┌---------------------------------------┐");
@@ -54,9 +53,14 @@ public class Main {
 //			System.out.println("답글내용 => " + reply.getContent());
 //			System.out.println("답글작성자 => " + reply.getWriter());
 //			System.out.println("답글일자 => " + reply.getRegdate());
-//			System.out.println("원본게시글 정보 => " + reply.getNo());
+//			System.out.println("원본게시글 정보 => " + reply.getBoard());
 //			System.out.println("└---------------------------------------┘");
 //			}
+//		    else {
+//		    	System.out.println("댓글을 찾을 수 없습니다.");
+//		    }
+//		    sc.close();
+			
 			/*-----------------------------------------------------------------------------------------------------*/
 			/*
 			 * // 답글 쓰기 테스트 Reply reply = new Reply(); reply.setContent("content2");
