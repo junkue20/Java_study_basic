@@ -144,7 +144,8 @@ public class AddressDBImpl implements AddressDB {
 	@Override
 	public List<AddressTable> selectAddressList(MemberTable member) {
 		try {
-			// n 개의 데이터
+			// 내가 짠 코드
+			// 주소에서 member로 전달되는 해당아이디 주소만 목록조회
 			FindIterable<Document> docs = this.addresses.find(Filters.eq("memberid", member.getId()));
 			List<AddressTable> list = new ArrayList<>();
 			for (Document doc : docs) {
@@ -154,7 +155,25 @@ public class AddressDBImpl implements AddressDB {
 				return list;
 			}
 			return null;
-
+			
+			// --------------강사님 코드------------- //
+			
+//			List<AddressTable> list = new ArrayList<>();
+//			// 주소에서 member로 전달되는 해당아이디 주소만 목록조회
+//			Bson filter = Filters.eq("memberid", member.getId());
+//			FindIterable<Document> docs = this.addresses.find(filter);
+//			for (Document doc : docs) {
+//			// 회원에서 아이디가 일치하는 정보 가져오기
+//			
+//			Bson filter1 = Filters.eq("_id", member.getId());
+//			Document doc1 = this.members.find(filter1).first();
+//			System.out.println(doc);
+//			System.out.println(doc1);
+//			// 회원정보는 아직없음
+//			AddressTable address = documentToAddress(doc);
+//	  		// set을 이용해서 address객체에 회원정보 추가
+//	  		address.setMemberid( documentToMember(doc1) );
+//			}
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
@@ -209,6 +228,21 @@ public class AddressDBImpl implements AddressDB {
 		address.setRegdate(doc.getDate("regdate"));
 
 		return address;
+	}
+	
+	// -------------------------------------------------------------------
+
+	// Document -> Member로 변경하는 메소드
+	private MemberTable documentToMember(Document doc) {
+		MemberTable member = new MemberTable();
+		member.setId(doc.getString("_id"));
+		member.setPassword(doc.getString("password"));
+		member.setName(doc.getString("name"));
+		member.setPhone(doc.getString("phone"));
+		member.setRole(doc.getString("role"));
+		member.setAge(doc.getInteger("age"));
+		member.setRegdate(doc.getDate("regdate"));
+		return member;
 	}
 	// -------------------------------------------------------------------
 

@@ -133,49 +133,51 @@ public class Main {
 //		sc.close();
 
 		/*---------------------- 회원ID 입력하고 주소값 받기-------------------------------------------*/
-		
-		Scanner sc = new Scanner(System.in);
-		MemberTable member = new MemberTable();
-		
-		System.out.print("주소 정보를 조회할 값을 입력해주세요. : ");
-		member.setId(sc.next());
-	
-		List<AddressTable> list = aDB.selectAddressOneForId(member);
-		for (AddressTable address : list) {
-			if (address != null) {
-				System.out.println("┌---------------------------------------┐");
-				System.out.println("주소_ID => " + address.getCode()); // 굳이 안불러와도 될 것 같음!
-				System.out.println("주소 => " + address.getAddress());
-				System.out.println("우편번호 => " + address.getPostcode());
-				System.out.println("등록일자 => " + address.getRegdate());
-				System.out.println("회원아이디 정보 => " + address.getMemberid());
-				System.out.println("└---------------------------------------┘");
-			}
-			else {
-				System.out.println("회원의 주소정보가 존재하지 않습니다.");
-			}sc.close();
-		}
+
+//		Scanner sc = new Scanner(System.in);
+//		MemberTable member = new MemberTable();
+//		
+//		System.out.print("주소 정보를 조회할 값을 입력해주세요. : ");
+//		member.setId(sc.next());
+//	
+//		List<AddressTable> list = aDB.selectAddressOneForId(member);
+//		for (AddressTable address : list) {
+//			if (address != null) {
+//				System.out.println("┌---------------------------------------┐");
+//				System.out.println("주소_ID => " + address.getCode()); // 굳이 안불러와도 될 것 같음!
+//				System.out.println("주소 => " + address.getAddress());
+//				System.out.println("우편번호 => " + address.getPostcode());
+//				System.out.println("등록일자 => " + address.getRegdate());
+//				System.out.println("회원아이디 정보 => " + address.getMemberid());
+//				System.out.println("└---------------------------------------┘");
+//			}
+//			else {
+//				System.out.println("회원의 주소정보가 존재하지 않습니다.");
+//			}sc.close();
+//		}
 
 		/*---------------------- 주소 여러개 불러오기-------------------------------------------*/
 
-//		AddressDB addressDB = new AddressDBImpl();
-//		MemberTable member = new MemberTable();
-//		
-//		member.setId("ccc1");
-//		
-//		List<AddressTable> list = addressDB.selectAddressList(member);
-//		
-//		for (AddressTable one : list) {
-//			System.out.println("┌---------------------------------------┐");
-//			System.out.println("주소_ID => " + one.getCode());
-//			System.out.println("주소 => " + one.getAddress());
-//			System.out.println("우편번호 => " + one.getPostcode());
-//			System.out.println("등록일자 => " + one.getRegdate());
-//			System.out.println("└---------------------------------------┘");
-//		}
-		
+		AddressDB addressDB = new AddressDBImpl();
+		MemberTable member = new MemberTable();
+		Scanner sc = new Scanner(System.in);
 
-		
+		System.out.print("주소를 조회하고자 하는 회원의 아이디를 입력해주세요. : ");
+		member.setId(sc.next());
+
+		sc.close();
+
+		List<AddressTable> list = addressDB.selectAddressList(member);
+
+		for (AddressTable one : list) {
+			System.out.println("┌---------------------------------------┐");
+			System.out.println("주소_ID => " + one.getCode());
+			System.out.println("주소 => " + one.getAddress());
+			System.out.println("우편번호 => " + one.getPostcode());
+			System.out.println("등록일자 => " + one.getRegdate());
+			System.out.println("└---------------------------------------┘");
+		}
+
 		/*-----------------------------------------------------------------------------*/
 
 	}

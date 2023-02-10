@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="day4.MemberTable"/>
-    <fullyQualifiedTypeName name="cls.Book"/>
-    <fullyQualifiedTypeName name="java.lang.Character"/>
-    <fullyQualifiedTypeName name="javax.sound.sampled.Line"/>
-    <fullyQualifiedTypeName name="javax.swing.JDialog"/>
-    <fullyQualifiedTypeName name="frame.JoinFrame"/>
-    <fullyQualifiedTypeName name="frame.StudentFrame"/>
-    <fullyQualifiedTypeName name="frame.EditProfessorFrame"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.MongoDatabase"/>
-    <fullyQualifiedTypeName name="java.util.Collection"/>
     <fullyQualifiedTypeName name="day6.MemberDB"/>
     <fullyQualifiedTypeName name="day6.Member"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.InliningLog.UpdateScope"/>
@@ -22,10 +12,8 @@
     <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
     <fullyQualifiedTypeName name="day7.MyInter1"/>
     <fullyQualifiedTypeName name="day7.MyListener"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.MongoClients"/>
     <fullyQualifiedTypeName name="com.mongodb.client.MongoCollection"/>
     <fullyQualifiedTypeName name="day7.BoardDAOImpl"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.model.Filters"/>
     <fullyQualifiedTypeName name="com.mongodb.client.MongoCursor"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="day8.BookDB"/>
@@ -47,17 +35,29 @@
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="day9.ReplyDB"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.model.Updates"/>
     <fullyQualifiedTypeName name="day9.ReplyDBImpl"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.result.InsertOneResult"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="day7.Board"/>
     <fullyQualifiedTypeName name="day9.BoardDAOImpl"/>
-    <fullyQualifiedTypeName name="day8.Config"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.FindIterable"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
-    <fullyQualifiedTypeName name="org.bson.Document"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="com.mongodb.client.MongoClients"/>
+    <fullyQualifiedTypeName name="day8.Config"/>
+    <fullyQualifiedTypeName name="day10.MemberDBImpl"/>
+    <fullyQualifiedTypeName name="day10.MemberDB"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="com.mongodb.client.model.Filters"/>
+    <fullyQualifiedTypeName name="com.mongodb.client.model.Updates"/>
+    <fullyQualifiedTypeName name="com.mongodb.client.result.InsertOneResult"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="day10.AddressDBImpl"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="com.mongodb.client.FindIterable"/>
+    <fullyQualifiedTypeName name="org.bson.Document"/>
+    <fullyQualifiedTypeName name="day10.AddressTable"/>
+    <fullyQualifiedTypeName name="day10.MemberTable"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.graalvm.compiler.core.common.FieldsScanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
