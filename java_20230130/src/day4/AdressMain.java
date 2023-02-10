@@ -2,13 +2,16 @@ package day4;
 
 import java.util.Date;
 
+import day10.AddressTable;
+import day10.MemberTable;
+
 public class AdressMain {
 
 	public static void main(String[] args) {
 
 		
 		MemberTable obj = new MemberTable("id", "Pw", "123준규", 
-				"010-1234-1233", "C", new Date());
+				"010-1234-1233", "C", 0, new Date());
 		
 		AddressTable address = new AddressTable(1000, "busan", "1234", new Date(), obj);
 		//값 입력받기

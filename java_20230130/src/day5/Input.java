@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.Scanner;
 
 import cls.Book;
-import day4.MemberTable;
+import day10.MemberTable;
 
 //입력을 담당하는 클래스
 public class Input {
@@ -28,7 +28,7 @@ public class Input {
 		MemberTable member = null; // 아직 객체가 안만들어 졌음.
 		if (str.length == 5) { // 입력한 항목이 정확한지 확인함
 			member = new MemberTable(str[0].trim(), str[1].trim(), str[2].trim(), str[3].trim(), str[4].trim(),
-					new Date());
+					0, new Date());
 			System.out.println(str[0].trim()); // .trim() 은 공백을 제거해주는 명령어.
 			System.out.println(str[1].trim());
 			System.out.println(str[2].trim());

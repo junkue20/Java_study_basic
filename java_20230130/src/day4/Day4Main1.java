@@ -2,12 +2,14 @@ package day4;
 
 import java.util.Date;
 
+import day10.MemberTable;
+
 public class Day4Main1 {
 
 	public static void main(String[] args) {
 
 		// 1. 객체 생성 (값 세팅)
-		MemberTable obj = new MemberTable("id", "Pw", "123준규", "010-1234-1233", "C", new Date());
+		MemberTable obj = new MemberTable("id", "Pw", "123준규", "010-1234-1233", "C", 10, new Date());
 
 		// 현재 클래스 값 확인용도\
 		System.out.println(obj.toString());
