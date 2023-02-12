@@ -1,6 +1,8 @@
 package day10;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class Main {
@@ -27,19 +29,21 @@ public class Main {
 //		map.put("name", "나다라");
 //
 //		// (key, value)의 형식. Document도 같은 형식이다. ex) doc.append("_id", doc.get ~)
-//		
-//		
-//		// -------------------------------------------------------------------------------
+//
 //		String id = (String) map.get("id"); // 꺼낸 value가 'Object'이기 떄문에 형변환 필요 (String)
 //		String name = (String) map.get("name");
 //		int age = (int) map.get("age");
 //		// -------------넣는값은 아무 값이나 넣을 수 있지만 뺄때는 형변환이 필요함----------------
 //
 //		
-//		System.out.println(id);
-//		System.out.println(name); // "가나다"가 아니라 "나다라"로 출력이 됨.
-//		System.out.println(age);		
+//		System.out.println(map.get("id"));
+//		System.out.println(name); // "가나다"가 아니라 "나다라"로 출력됨.
+//		System.out.println(age);  // 21	
 
+		
+		
+		
+		
 		/*---------------------회원정보 넣기-----------------------------------------------*/
 
 //		//빈 map 객체를 생성
@@ -158,25 +162,25 @@ public class Main {
 
 		/*---------------------- 주소 여러개 불러오기-------------------------------------------*/
 
-		AddressDB addressDB = new AddressDBImpl();
-		MemberTable member = new MemberTable();
-		Scanner sc = new Scanner(System.in);
-
-		System.out.print("주소를 조회하고자 하는 회원의 아이디를 입력해주세요. : ");
-		member.setId(sc.next());
-
-		sc.close();
-
-		List<AddressTable> list = addressDB.selectAddressList(member);
-
-		for (AddressTable one : list) {
-			System.out.println("┌---------------------------------------┐");
-			System.out.println("주소_ID => " + one.getCode());
-			System.out.println("주소 => " + one.getAddress());
-			System.out.println("우편번호 => " + one.getPostcode());
-			System.out.println("등록일자 => " + one.getRegdate());
-			System.out.println("└---------------------------------------┘");
-		}
+//		AddressDB addressDB = new AddressDBImpl();
+//		MemberTable member = new MemberTable();
+//		Scanner sc = new Scanner(System.in);
+//
+//		System.out.print("주소를 조회하고자 하는 회원의 아이디를 입력해주세요. : ");
+//		member.setId(sc.next());
+//
+//		sc.close();
+//
+//		List<AddressTable> list = addressDB.selectAddressList(member);
+//
+//		for (AddressTable one : list) {
+//			System.out.println("┌---------------------------------------┐");
+//			System.out.println("주소_ID => " + one.getCode());
+//			System.out.println("주소 => " + one.getAddress());
+//			System.out.println("우편번호 => " + one.getPostcode());
+//			System.out.println("등록일자 => " + one.getRegdate());
+//			System.out.println("└---------------------------------------┘");
+//		}
 
 		/*-----------------------------------------------------------------------------*/
 
