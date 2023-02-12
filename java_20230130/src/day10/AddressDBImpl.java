@@ -155,7 +155,7 @@ public class AddressDBImpl implements AddressDB {
 				return list;
 			}
 			return null;
-			
+		
 			// --------------강사님 코드------------- //
 			
 //			List<AddressTable> list = new ArrayList<>();
@@ -174,11 +174,13 @@ public class AddressDBImpl implements AddressDB {
 //	  		// set을 이용해서 address객체에 회원정보 추가
 //	  		address.setMemberid( documentToMember(doc1) );
 //			}
+//			
+			
 		} catch (Exception e) {
 			e.printStackTrace();
 			return null;
-
 		}
+			
 	}
 	// ----회원에 해당하는 주소 전체 조회------------------------------------------
 
@@ -201,20 +203,6 @@ public class AddressDBImpl implements AddressDB {
 			return null;
 
 		}
-//		try {
-//		Document doc = new Document();
-//		MemberTable member = new MemberTable();
-//		doc.put("_id", map.get("_id"));
-//		doc.put("address", map.get("address"));
-//		doc.put("postcode", map.get("postcode"));
-//		doc.put("regdate", map.get("regdate"));
-//		/* 수정필요 */ doc.put("memberid", map.get(member.getId()));
-//
-//	} catch (Exception e) {
-//		e.printStackTrace();
-//	}
-//	return 0;
-		// 다 보고 지우기!
 
 	}
 	// -------------------------------------------------------------------
