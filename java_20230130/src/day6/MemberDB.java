@@ -45,6 +45,7 @@ public class MemberDB {
 		Bson filter = Filters.eq("name", searchName);
 		// 2개 있으니 2번 수행
 			printAction(filter);
+			
 		}
 	
 

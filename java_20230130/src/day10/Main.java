@@ -135,7 +135,7 @@ public class Main {
 //			System.out.println("등록된 회원의 주소 정보를 찾을 수 없습니다.");
 //		}
 //		sc.close();
-
+		
 		/*---------------------- 회원ID 입력하고 주소값 받기-------------------------------------------*/
 
 //		Scanner sc = new Scanner(System.in);
