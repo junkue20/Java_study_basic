@@ -26,4 +26,8 @@ public class Config {
 	public static final String MEMBERCOL = "members";
 	
 	public static final String ADDRESSOL = "adresses";
+	
+	public static final String TITANICOL = "titanic passengers";
+
+	
 }

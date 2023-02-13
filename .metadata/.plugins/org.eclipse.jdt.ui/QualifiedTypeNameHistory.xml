@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="day6.MemberDB"/>
-    <fullyQualifiedTypeName name="day6.Member"/>
-    <fullyQualifiedTypeName name="org.graalvm.compiler.nodes.InliningLog.UpdateScope"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.result.DeleteResult"/>
-    <fullyQualifiedTypeName name="day4.ItemMain"/>
-    <fullyQualifiedTypeName name="cls.Item"/>
-    <fullyQualifiedTypeName name="day4.Itemtable"/>
-    <fullyQualifiedTypeName name="day6.Item"/>
-    <fullyQualifiedTypeName name="day6.ItemDB"/>
     <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
     <fullyQualifiedTypeName name="day7.MyInter1"/>
     <fullyQualifiedTypeName name="day7.MyListener"/>
@@ -48,16 +39,25 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.mongodb.client.model.Filters"/>
     <fullyQualifiedTypeName name="com.mongodb.client.model.Updates"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.result.InsertOneResult"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="day10.AddressDBImpl"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="com.mongodb.client.FindIterable"/>
-    <fullyQualifiedTypeName name="org.bson.Document"/>
     <fullyQualifiedTypeName name="day10.AddressTable"/>
     <fullyQualifiedTypeName name="day10.MemberTable"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.core.common.FieldsScanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="okhttp3.OkHttpClient"/>
+    <fullyQualifiedTypeName name="day11.RestClient1"/>
+    <fullyQualifiedTypeName name="okhttp3.Request"/>
+    <fullyQualifiedTypeName name="okhttp3.Request.Builder"/>
+    <fullyQualifiedTypeName name="okhttp3.Response"/>
+    <fullyQualifiedTypeName name="org.bson.json.JsonObject"/>
+    <fullyQualifiedTypeName name="org.json.JSONObject"/>
+    <fullyQualifiedTypeName name="org.json.JSONArray"/>
+    <fullyQualifiedTypeName name="org.bson.Document"/>
+    <fullyQualifiedTypeName name="com.mongodb.client.result.InsertOneResult"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
 </qualifiedTypeNameHistroy>
