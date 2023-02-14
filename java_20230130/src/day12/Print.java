@@ -1,6 +1,5 @@
 package day12;
 
-import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
@@ -208,8 +207,8 @@ public class Print {
 			}
 		}
 		for (int i = 1; i < 4; i++) {
-			System.out.println(i + "등급 대 생존자 => " + idx2[i] + "명");
-			System.out.println(i + "등급 대 생존자 비율 => " + (float) idx2[i] / (float) idx1[i] * 100);
+			System.out.println(i + "등급대 생존자 => " + idx2[i] + "명");
+			System.out.println(i + "등급대 생존자 비율 => " + (float) idx2[i] / (float) idx1[i] * 100);
 			System.out.println("-------------------------");
 		}
 	}
