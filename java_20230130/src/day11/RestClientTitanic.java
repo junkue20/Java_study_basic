@@ -1,16 +1,17 @@
 package day11;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.bson.Document;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 import com.mongodb.client.MongoCollection;
-import com.mongodb.client.model.Filters;
-import com.mongodb.client.model.Updates;
+import com.mongodb.client.result.InsertManyResult;
 
 import day8.Config;
 import okhttp3.OkHttpClient;
@@ -18,17 +19,13 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class RestClientTitanic {
-	private MongoCollection<Document> titanic = null;
-	private MongoCollection<Document> sequence = null;
-
-	final String URL = "https://raw.githubusercontent.com/" + "AISPUBLISHING/dsfs-python/master/titanic.json";
+	private MongoCollection<Document> titanicCollection = null;
+	
+	final String URL = "https://raw.githubusercontent.com/AISPUBLISHING/dsfs-python/master/titanic.json";
 	private String data = null;
 
 	public RestClientTitanic() {
-
-		this.sequence = MongoClients.create(Config.URL).getDatabase(Config.DBNAME).getCollection(Config.RESEQUENCECOL);
-		this.titanic = MongoClients.create(Config.URL).getDatabase(Config.DBNAME).getCollection(Config.TITANICOL);
-
+		// rest 데이터가져와서 data 변수에 추가하기
 		try {
 			OkHttpClient client = new OkHttpClient();
 			Request request = new Request.Builder().url(URL).get().build();
@@ -38,6 +35,9 @@ public class RestClientTitanic {
 				this.data = response.body().string().toString();
 
 			}
+			// 데이터베이스 접속하기
+			MongoClient dbClient = MongoClients.create(Config.URL);
+			titanicCollection = dbClient.getDatabase(Config.DBNAME).getCollection(Config.TITANICCOL);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -97,14 +97,14 @@ public class RestClientTitanic {
 				t1.setPassengerId(jobj.getInt("passengerId"));
 			}
 //			if (jobj.getString("embarked").equals("C")) {
-//				System.out.println("셰르부르");
+//				t1.setEmbarked("셰르부르");
 //			}
 //			else if(jobj.getString("embarked").equals("Q")){
-//				System.out.println("퀸스타운");
+//				t1.setEmbarked("퀸스타운");
 //			}
 //			else if(jobj.getString("embarked").equals("S")){
-//				System.out.println("사우샘프턴");
-//			}  // 강사님께 2/14일에 질문하기. 
+//				t1.setEmbarked("사우샘프턴");
+//			}  
 			if (!jobj.isNull("embarked")) {
 				t1.setEmbarked(jobj.getString("embarked"));
 			}
@@ -113,15 +113,31 @@ public class RestClientTitanic {
 		return list;
 	}
 
-	public void saveMongoDB() {
-		try {
-			Document doc = this.sequence.findOneAndUpdate
-					(Filters.eq("_id", "SEQ_TITANIC_CODE"), Updates.inc("idx", 1));
-			long code = doc.getLong("idx");
-			
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+	public void saveMongodDB() {
+		List<Titanic> list = this.paraseData();
+		//List<Titanic>  => List<Document>
+		List<Document> saveList = new ArrayList<Document>();
+		for( Titanic tmp : list ) {
+			Document doc = new Document();
+			doc.append("fare", tmp.getFare());
+			doc.append("survived", tmp.getSurvived());
+			doc.append("pclass", tmp.getPclass());
+			doc.append("sex", tmp.getSex());
+			doc.append("sibsp", tmp.getSibsp());
+			doc.append("parch", tmp.getParch());
+			doc.append("ticket", tmp.getTicket());
+			doc.append("cabin", tmp.getCabin());
+			doc.append("embarked", tmp.getEmbarked());
+			doc.append("name", tmp.getName());
+			doc.append("passengerid", tmp.getPassengerId());
+			doc.append("age", tmp.getAge());
+			doc.append("regdate", new Date());
+			doc.append("age", tmp.getAge());
 
+			saveList.add(doc);
+		}
+		
+		InsertManyResult result = titanicCollection.insertMany( saveList );
+		System.out.println(result);
 	}
 }
