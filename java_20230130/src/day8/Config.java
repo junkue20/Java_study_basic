@@ -22,12 +22,9 @@ public class Config {
 	public static final String REPLYCOL = "replies";
 	// 시퀀스용 컬렉션 명칭(테이블)
 	public static final String RESEQUENCECOL = "sequence";
-
 	public static final String MEMBERCOL = "members";
-	
 	public static final String ADDRESSOL = "adresses";
-	
-	public static final String TITANICOL = "titanic passengers";
+	public static final String TITANICCOL = "titanic passengers";
 
 	
 }
