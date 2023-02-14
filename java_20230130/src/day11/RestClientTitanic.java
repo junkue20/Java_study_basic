@@ -37,7 +37,7 @@ public class RestClientTitanic {
 			}
 			// 데이터베이스 접속하기
 			MongoClient dbClient = MongoClients.create(Config.URL);
-			titanicCollection = dbClient.getDatabase(Config.DBNAME).getCollection(Config.TITANICCOL);
+			this.titanicCollection = dbClient.getDatabase(Config.DBNAME).getCollection(Config.TITANICCOL);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -53,9 +53,9 @@ public class RestClientTitanic {
 
 			Titanic t1 = new Titanic();
 
-			t1.setFare(jobj.getFloat("fare"));
+			t1.setFare(jobj.getDouble("fare"));
 			t1.setName(jobj.getString("name"));
-			t1.setAge(0.0f);
+			t1.setAge(0.0d);
 			t1.setCabin("정보없음.");
 			t1.setParch(0);
 			t1.setPclass(0);
@@ -76,7 +76,7 @@ public class RestClientTitanic {
 				t1.setSex(jobj.getString("sex"));
 			}
 			if (!jobj.isNull("age")) {
-				t1.setAge(jobj.getFloat("age"));
+				t1.setAge(jobj.getDouble("age"));
 			}
 			if (!jobj.isNull("sibsp")) {
 				t1.setSibsp(jobj.getInt("sibsp"));
@@ -85,7 +85,7 @@ public class RestClientTitanic {
 				t1.setParch(jobj.getInt("parch"));
 			}
 			if (!jobj.isNull("fare")) {
-				t1.setFare(jobj.getFloat("fare"));
+				t1.setFare(jobj.getDouble("fare"));
 			}
 			if (!jobj.isNull("ticket")) {
 				t1.setTicket(jobj.getString("ticket"));
