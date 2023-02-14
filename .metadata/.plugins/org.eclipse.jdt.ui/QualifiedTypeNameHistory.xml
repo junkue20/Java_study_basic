@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.SuppressWarnings"/>
-    <fullyQualifiedTypeName name="day7.MyInter1"/>
-    <fullyQualifiedTypeName name="day7.MyListener"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.MongoCollection"/>
     <fullyQualifiedTypeName name="day7.BoardDAOImpl"/>
     <fullyQualifiedTypeName name="com.mongodb.client.MongoCursor"/>
     <fullyQualifiedTypeName name="java.lang.Exception"/>
@@ -36,16 +32,12 @@
     <fullyQualifiedTypeName name="day8.Config"/>
     <fullyQualifiedTypeName name="day10.MemberDBImpl"/>
     <fullyQualifiedTypeName name="day10.MemberDB"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="com.mongodb.client.model.Filters"/>
     <fullyQualifiedTypeName name="com.mongodb.client.model.Updates"/>
     <fullyQualifiedTypeName name="day10.AddressDBImpl"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.FindIterable"/>
     <fullyQualifiedTypeName name="day10.AddressTable"/>
     <fullyQualifiedTypeName name="day10.MemberTable"/>
     <fullyQualifiedTypeName name="org.graalvm.compiler.core.common.FieldsScanner"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="okhttp3.OkHttpClient"/>
     <fullyQualifiedTypeName name="day11.RestClient1"/>
@@ -60,4 +52,12 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="com.mongodb.client.FindIterable"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.lang.Iterable"/>
+    <fullyQualifiedTypeName name="java.util.Iterator"/>
+    <fullyQualifiedTypeName name="day11.Titanic"/>
+    <fullyQualifiedTypeName name="day12.TitanicDBImpl"/>
 </qualifiedTypeNameHistroy>
