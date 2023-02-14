@@ -18,5 +18,11 @@ public interface TitanicDB {
 	// 나이순으로 정렬한 후 n명 조회
 	public List<Titanic> selectTitanicAge(int n);
 	
+	// 입력받은 항구에서 출발한 사람들 조회하기 
+	public List<Titanic> selectTitanicEmbarkedList(String E);
+	
+	// 남성 승객만 조회
+	public List<Map<String, Object>> selectTitanicList(String s);
+	
 	
 }

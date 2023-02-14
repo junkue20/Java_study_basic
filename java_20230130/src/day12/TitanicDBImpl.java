@@ -125,7 +125,7 @@ public class TitanicDBImpl implements TitanicDB {
 			titanic.setAge(doc.getDouble("age")); // float은 어떻게 받아와야할까
 			titanic.setSibsp(doc.getInteger("sibsp"));
 			titanic.setParch(doc.getInteger("parch"));
-			titanic.setName(doc.getString("ticket"));
+			titanic.setTicket(doc.getString("ticket"));
 			titanic.setFare(doc.getDouble("fare"));
 			titanic.setCabin(doc.getString("cabin"));
 			titanic.setEmbarked(doc.getString("embarked"));
@@ -136,5 +136,49 @@ public class TitanicDBImpl implements TitanicDB {
 		}
 		return list;
 
+	}
+
+	@Override
+	public List<Titanic> selectTitanicEmbarkedList(String E) {
+		try {
+			Bson sort = Filters.eq("fare", -1);
+			Bson filter = Filters.eq("embarked", E);
+			FindIterable<Document> docs = this.titanic.find(filter).sort(sort);
+			List<Titanic> list = new ArrayList<>();
+			for (Document doc : docs) { // 원본데이터 반복
+				Titanic titanic = new Titanic();
+				// age가 원래 float이었으나, getFloat이 되지않아 double로 바꿈.
+				// titanic.setAge(doc.getDouble("age").floatValue()); 도 가능!! (더블로 빼고 다시
+				// float으로바꿔주기)
+				titanic.setName(doc.getString("name"));
+				titanic.setSurvived(doc.getString("survived"));
+				titanic.setPclass(doc.getInteger("pclass"));
+				titanic.setSex(doc.getString("sex"));
+				titanic.setAge(doc.getDouble("age")); // float은 어떻게 받아와야할까
+				titanic.setSibsp(doc.getInteger("sibsp"));
+				titanic.setParch(doc.getInteger("parch"));
+				titanic.setTicket(doc.getString("ticket"));
+				titanic.setFare(doc.getDouble("fare"));
+				titanic.setCabin(doc.getString("cabin"));
+				titanic.setEmbarked(doc.getString("embarked"));
+				titanic.setPassengerId(doc.getInteger("passengerid"));
+				titanic.setDate(doc.getDate("regdate"));
+
+				list.add(titanic);
+			}
+			return list;
+
+		} catch (Exception e) {
+			e.printStackTrace();
+			return null;
+
+		}
+
+	}
+
+	@Override
+	public List<Map<String, Object>> selectTitanicList(String s) {
+
+		return null;
 	}
 }
