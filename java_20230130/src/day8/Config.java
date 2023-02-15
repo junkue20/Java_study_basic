@@ -26,5 +26,8 @@ public class Config {
 	public static final String ADDRESSOL = "adresses";
 	public static final String TITANICCOL = "titanic passengers";
 
-	
+	// 채팅용 서버정보
+	public static final String BROKER = "tcp://1.234.5.158:11883";
+	public static final String CONNECTID = "ds606";
+	public static final String CONNECTPW = "ds606";
 }
