@@ -3,7 +3,7 @@ package day13;
 import java.util.List;
 import java.util.Map;
 
-public interface ItemDB {
+public interface ItemDB { // 인터페이스 페이지
 
 	// 물품 전체 목록
 	public List<Map<String, Object>> selecItemListMap(int n);
