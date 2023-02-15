@@ -176,9 +176,10 @@ public class Print {
 				}
 			}
 		}
-		System.out.println((float) (idx2[0] / (float) idx1[0]) * 100);
-		System.out.println((float) (idx2[1] / (float) idx1[1]) * 100);
-		System.out.println("----------");
+		System.out.println("---------------------------------");
+		System.out.println("남성 생존자 비율 : " + (float) (idx2[0] / (float) idx1[0]) * 100 + " %");
+		System.out.println("여성 생존자 비율 : " + (float) (idx2[1] / (float) idx1[1]) * 100 + " %");
+		System.out.println("---------------------------------");
 	}
 
 	// 티켓 등급별 생존자수 구하기 (전체 생존자 수 891명, 비율은 소수점으로 표시)

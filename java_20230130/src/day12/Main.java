@@ -62,9 +62,8 @@ public class Main {
 		List<Titanic> list = tDB.selectTitanicList();
 		
 		Print print = new Print();
-		print.printPClassSurvived(list);
-		
-		
+//		print.printPClassSurvived(list);  
+		print.printSexSurvived(list);
 
 	}
 }

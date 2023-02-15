@@ -94,9 +94,9 @@ public class ChatClient implements MqttCallback { // 채팅클래스
 
 			// 데이터 베이스에서 조회
 			List<Map<String, Object>> list = iDB.selecItemListMap(ret); // 
-			for(Map<String, Object> map1 : list){
-				System.out.println(map1.get("_id"));
-				System.out.println(map1.get("name"));
+			for(Map<String, Object> map1 : list){ // 반복문. DB에서 받아온 items 정보를 처음부터 끝까지 범위를 지정.
+				System.out.println(map1.get("_id")); // 아이템 숫자
+				System.out.println(map1.get("name")); // 아이템 이름 만 출력되게끔 설정
 				System.out.println("---------------------------");
 			}
 			
