@@ -89,16 +89,15 @@ public class ChatClient implements MqttCallback { // 채팅클래스
 			map.put("quantity", quantity);
 
 			// 데이터 베이스에 추가하기
-			int ret = iDB.insertItemMap(map); // interface의 insertItemMap로 결과를 보냄.
-			System.out.println("DB추가 유무 = > " + ret);
+			int ret = iDB.insertItemMap(map); // (interface의) insertItemMap로 결과를 보냄.
+			System.out.println("DB추가 유무 = > " + ret); // 자료가 올라가면 1 표시.
 
 			// 데이터 베이스에서 조회
-			List<Map<String, Object>> list = iDB.selecItemListMap(ret);
-			for(Map<String, Object> map1 : list) {
+			List<Map<String, Object>> list = iDB.selecItemListMap(ret); // 
+			for(Map<String, Object> map1 : list){
 				System.out.println(map1.get("_id"));
 				System.out.println(map1.get("name"));
 				System.out.println("---------------------------");
-
 			}
 			
 		} catch (Exception e) {
