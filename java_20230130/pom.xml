@@ -59,6 +59,13 @@
 			<artifactId>okhttp</artifactId>
 			<version>3.10.0</version>
 		</dependency>
+		<!-- 2023-02-15 추가 -->
+		<!-- mqtt -->
+		<dependency>
+		<groupId>org.eclipse.paho</groupId>
+		<artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+		<version>1.2.5</version>
+	</dependency>
 		<!-- _________________________________________________________ -->
 	</dependencies>
 </project>
