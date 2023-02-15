@@ -19,7 +19,7 @@ public class BookDBImpl implements BookDB {
 
 	private MongoCollection<Document> sequence = null;
 	private MongoCollection<Document> books = null;
-	
+
 	// 생성자 먼저 생성!
 	public BookDBImpl() { // DB에 책 항목 생성
 		try {// 몽고DB -> 접속URL -> DB이름
@@ -100,7 +100,7 @@ public class BookDBImpl implements BookDB {
 			Bson sort = Filters.eq("_id", -1);// 책번호를 기준으로 내림차순(-1)
 			// page = 1 => 0 page= 2 =>10, page=3 => 20
 			FindIterable<Document> docs = this.books.find().sort(sort).skip(10 * (page - 1)).limit(10);
-                                                                                           //limit이 표시수량
+			// limit이 표시수량
 			// FindIterable<Document> docs = this.books.find();
 			// docs의 값을 list로 다 복사하기
 			for (Document doc : docs) {
@@ -125,14 +125,13 @@ public class BookDBImpl implements BookDB {
 	@Override
 	public int deleteBook(int no) { // 책 삭제
 		try {
-		
+
 			return 1;
-		}
-		catch (Exception e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 			return -1;
 		}
-		
+
 	}
 
 	@Override

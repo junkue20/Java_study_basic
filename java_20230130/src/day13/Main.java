@@ -2,6 +2,8 @@ package day13;
 
 import java.util.Scanner;
 
+import org.json.JSONObject;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -16,7 +18,16 @@ public class Main {
 				if (msg.equals("나가기")) {
 					break; // 반복문 탈출
 				}
-				chat.sendMessage("/pknu/class303/all", msg);
+
+				// ex)가나다
+				JSONObject jobj = new JSONObject();
+				jobj.put("name", msg);
+				jobj.put("type", 1);
+				// {"name":"입력내용", "type":1}
+				
+				
+				// JSONOBject = > String => byte[] ~~~byte[] => String=>
+				chat.sendMessage("/pknu/class303/all", jobj.toString());
 				Thread.sleep(200); // 0.2초 기다림
 
 			}
