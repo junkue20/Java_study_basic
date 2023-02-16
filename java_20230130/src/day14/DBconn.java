@@ -17,13 +17,12 @@ public class DBconn {
 	
 	// 외부에서 생성자를 호출할 수 없음. private
 	private DBconn() {
-		
 	}
 	
 	// 
 	public static DBconn getInstance() {
 
-		db = new DBconn(); 
+		db = new DBconn();  // static 변수 'db'가 생성자의 역활을 대신함 
 		return db;
 		
 	}

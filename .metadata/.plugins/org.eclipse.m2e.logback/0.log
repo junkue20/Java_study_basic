@@ -11271,3 +11271,7 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2023-02-16 16:49:30,030 [Worker-97: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\main\resources
 2023-02-16 16:49:30,031 [Worker-97: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-02-16 16:49:30,031 [Worker-97: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\test\resources
+2023-02-16 18:15:15,235 [Worker-104: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-16 18:15:15,237 [Worker-104: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\main\resources
+2023-02-16 18:15:15,239 [Worker-104: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-16 18:15:15,239 [Worker-104: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\test\resources

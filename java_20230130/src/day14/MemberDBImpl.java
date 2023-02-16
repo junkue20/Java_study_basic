@@ -25,7 +25,6 @@ public class MemberDBImpl implements MemberDB {
 	public MemberDBImpl() {
 
 		members = DBconn.getInstance().getCollection(Config.MEMBERCOL);
-
 	}
 
 	// ---------------------------------------------------------------------
