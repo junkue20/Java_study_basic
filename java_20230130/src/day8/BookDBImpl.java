@@ -49,7 +49,7 @@ public class BookDBImpl implements BookDB {
 
 			InsertOneResult result = this.books.insertOne(doc1);// 받았던 위의 doc1을 출력
 			System.out.println(result);
-			if (result.getInsertedId().asInt32().getValue() == doc.getInteger("idx")) {
+			if (result.getInsertedId().asInt32().getValue() == doc.getInteger("_id")) {
 				return 1;
 
 			}
