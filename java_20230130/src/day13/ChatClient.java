@@ -41,7 +41,7 @@ public class ChatClient implements MqttCallback { // 채팅클래스
 	// 구독설정 (해당 주소로 오는 내용을 확인이 가능.)
 	public boolean setSubscribe() {
 		try {
-			client.subscribe("/pknu/class303/id209");
+			client.subscribe("/pknu/class303/id209"); // 내용을 받고싶은 주소
 			return true;
 		} catch (Exception e) {
 			return false;
@@ -62,12 +62,12 @@ public class ChatClient implements MqttCallback { // 채팅클래스
 	}
 
 	@Override
-	public void connectionLost(Throwable cause) {
+	public void connectionLost(Throwable cause) {// 연결이 끊어졌을때
 		System.out.println("connectionLost");
 	}
 
 	@Override
-	public void messageArrived(String topic, MqttMessage message) throws Exception {
+	public void messageArrived(String topic, MqttMessage message) throws Exception { // 도착한 메세지 분류
 		try {
 			// MqttMessage타입을 String 타입으로 변환 ( 변환된 String 타입을 DB로 전송하기 위함 )
 			byte[] tmp = message.getPayload();
@@ -108,7 +108,7 @@ public class ChatClient implements MqttCallback { // 채팅클래스
 	}
 
 	@Override
-	public void deliveryComplete(IMqttDeliveryToken token) {
+	public void deliveryComplete(IMqttDeliveryToken token) { // 메세지 전송 성공시
 		System.out.println("deliveryComplete");
 	}
 }

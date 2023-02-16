@@ -40,8 +40,8 @@ public class ItemDBImpl implements ItemDB {
 	@Override
 	public List<Map<String, Object>> selecItemListMap(int n) {
 		try {
-			Bson sort = Filters.eq("_id", -1);
-			FindIterable<Document> docs = this.items.find().sort(sort).limit(n);
+			Bson sort = Filters.eq("_id", -1); // 내림차순 정렬 
+			FindIterable<Document> docs = this.items.find().sort(sort).limit(n); // docs에 찾아놓은 정보들을 대입
 
 			List<Map<String, Object>> list = new ArrayList<>();
 			for (Document doc : docs) {
