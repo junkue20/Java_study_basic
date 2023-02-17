@@ -170,8 +170,11 @@ public class Main {
 		
 		// 확장자가 java로 만들어 짐. -> 컴파일 후 확장자는 class -> 실행 (Run을 누르면 순차적으로 진행됨)
 
+		// 1바이트 = 8비트 ㅜㅜ
+		
+		
 		// 원시타입
-		// [논리형] boolean (8 bit) = > 1 byte => 0과1로 구성
+		// [논리형] boolean (8 bit)1 byte => 0과1로 구성
 		// [정수형] short(2 byte), int(4 byte), long(8 byte),
 		// [실수형] folat(4 byte), double(8 byte)
 		// [문자형] char
