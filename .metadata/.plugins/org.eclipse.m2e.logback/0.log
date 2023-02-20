@@ -11771,3 +11771,228 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: expected ST
 2023-02-20 15:49:33,036 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\main\resources
 2023-02-20 15:49:33,038 [Worker-18: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
 2023-02-20 15:49:33,039 [Worker-18: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\test\resources
+2023-02-20 15:50:47,069 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 15:50:47,070 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\main\resources
+2023-02-20 15:50:47,071 [Worker-15: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 15:50:47,072 [Worker-15: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\test\resources
+2023-02-20 15:53:15,314 [Worker-22: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: java_20230130:java_20230130:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\java_20230130\pom.xml.
+2023-02-20 15:53:16,534 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 15:53:16,536 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\main\resources
+2023-02-20 15:53:16,538 [Worker-22: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 15:53:16,540 [Worker-22: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\test\resources
+2023-02-20 15:53:20,580 [Worker-23: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: java_20230130:java_20230130:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\java_20230130\pom.xml.
+2023-02-20 15:53:20,712 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 15:53:20,714 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\main\resources
+2023-02-20 15:53:20,716 [Worker-23: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 15:53:20,718 [Worker-23: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\test\resources
+2023-02-20 16:08:04,874 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 16:08:05,160 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /oracle/src
+2023-02-20 16:08:05,161 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /oracle/src/test/java because it overlaps with /oracle/src
+2023-02-20 16:08:05,728 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-02-20 16:08:05,846 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 16:08:06,112 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /oracle/src
+2023-02-20 16:08:06,141 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /oracle/src/test/java because it overlaps with /oracle/src
+2023-02-20 16:08:06,202 [Worker-24: Enabling Maven Dependency Management] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2023-02-20 16:08:06,317 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:08:06,318 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:08:06,321 [Worker-28: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:08:06,322 [Worker-28: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:10:04,923 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:10:04,924 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:10:04,929 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:10:04,930 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:11:03,935 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:11:03,936 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:11:03,938 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:11:03,938 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:11:23,451 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-02-20 16:11:23,642 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 16:11:23,671 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: java_20230130:java_20230130:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\java_20230130\pom.xml.
+2023-02-20 16:11:23,793 [Worker-33: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /oracle/src
+2023-02-20 16:11:23,793 [Worker-33: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /oracle/src/test/java because it overlaps with /oracle/src
+2023-02-20 16:11:23,870 [Worker-33: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2023-02-20 16:11:24,015 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:11:24,016 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\main\resources
+2023-02-20 16:11:24,020 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:11:24,022 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\test\resources
+2023-02-20 16:11:24,039 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:11:24,041 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:11:24,044 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:11:24,045 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:11:39,056 [Worker-32: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:11:39,057 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:11:39,060 [Worker-32: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:11:39,060 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:11:58,590 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:11:58,591 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:11:58,592 [Worker-35: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:11:58,593 [Worker-35: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:12:12,520 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-02-20 16:12:12,684 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 16:12:12,713 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: java_20230130:java_20230130:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\java_20230130\pom.xml.
+2023-02-20 16:12:12,847 [Worker-35: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /oracle/src
+2023-02-20 16:12:12,847 [Worker-35: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /oracle/src/test/java because it overlaps with /oracle/src
+2023-02-20 16:12:12,924 [Worker-35: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2023-02-20 16:12:13,073 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:12:13,074 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\main\resources
+2023-02-20 16:12:13,078 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:12:13,080 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\test\resources
+2023-02-20 16:12:13,095 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:12:13,096 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:12:13,098 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:12:13,099 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:12:24,134 [Worker-25: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 16:12:24,157 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:12:24,158 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:12:24,160 [Worker-25: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:12:24,161 [Worker-25: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:12:24,298 [Worker-25: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-02-20 16:12:24,345 [Worker-25: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 16:12:24,367 [Worker-25: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /oracle/src
+2023-02-20 16:12:24,367 [Worker-25: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /oracle/src/test/java because it overlaps with /oracle/src
+2023-02-20 16:12:24,480 [Worker-25: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2023-02-20 16:12:25,360 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:12:25,361 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:12:25,363 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:12:25,364 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:12:55,166 [Worker-32: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:12:55,167 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:12:55,168 [Worker-32: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:12:55,169 [Worker-32: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:13:07,486 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:13:07,487 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:13:07,489 [Worker-29: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:13:07,490 [Worker-29: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:17:58,406 [Worker-38: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:17:58,407 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:17:58,408 [Worker-38: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:17:58,409 [Worker-38: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:19:22,961 [Worker-39: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 16:19:22,982 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:19:22,983 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:19:22,984 [Worker-39: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:19:22,985 [Worker-39: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:19:29,319 [Worker-39: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - File not found: C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+org.eclipse.core.internal.resources.ResourceException: File not found: C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:268)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:572)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:474)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:360)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:313)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:149)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:87)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:196)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: File not found: C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 27 common frames omitted
+2023-02-20 16:20:06,033 [Worker-42: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 16:20:06,065 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:20:06,066 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:20:06,067 [Worker-42: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:20:06,068 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:22:01,085 [Worker-40: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 16:22:01,189 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:22:01,190 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:22:01,192 [Worker-40: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:22:01,192 [Worker-40: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:22:32,442 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:22:32,443 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:22:32,445 [Worker-41: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:22:32,445 [Worker-41: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:23:34,218 [Worker-44: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-02-20 16:23:34,428 [Worker-44: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 16:23:34,489 [Worker-44: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: java_20230130:java_20230130:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\java_20230130\pom.xml.
+2023-02-20 16:23:34,601 [Worker-44: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /oracle/src
+2023-02-20 16:23:34,601 [Worker-44: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Not adding source folder /oracle/src/test/java because it overlaps with /oracle/src
+2023-02-20 16:23:34,643 [Worker-44: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed for 1 poms: local refresh takes 0.00 sec, refresh facades takes 0.00 sec, update config takes 0.00 sec 
+2023-02-20 16:23:34,787 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:23:34,788 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\main\resources
+2023-02-20 16:23:34,790 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:23:34,790 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\java_20230130\src\test\resources
+2023-02-20 16:23:34,804 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:23:34,804 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:23:34,806 [Worker-44: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:23:34,806 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:24:27,884 [Worker-41: Building] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - File not found: C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+org.eclipse.core.internal.resources.ResourceException: File not found: C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:835)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:268)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refreshPhase2(ProjectRegistryManager.java:572)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:474)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:360)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.refresh(ProjectRegistryManager.java:313)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.getProjectFacade(MavenBuilder.java:149)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.lambda$0(MavenBuilder.java:87)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:364)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:274)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:213)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder$BuildMethod.execute(MavenBuilder.java:86)
+	at org.eclipse.m2e.core.internal.builder.MavenBuilder.build(MavenBuilder.java:196)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:1020)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:247)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:303)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:392)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:395)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:506)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:454)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:536)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:161)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:255)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.lang.Exception: File not found: C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 27 common frames omitted
+2023-02-20 16:47:50,493 [Worker-50: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 16:47:50,644 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:47:50,645 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:47:50,646 [Worker-50: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:47:50,647 [Worker-50: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:47:53,853 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:47:53,854 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:47:53,857 [Worker-43: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:47:53,858 [Worker-43: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:48:51,529 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:48:51,530 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:48:51,532 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:48:51,532 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:51:30,118 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:51:30,119 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:51:30,121 [Worker-53: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:51:30,122 [Worker-53: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 16:51:56,427 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:51:56,428 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 16:51:56,430 [Worker-49: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 16:51:56,430 [Worker-49: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 17:37:21,629 [Worker-55: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: oracle:oracle:0.0.1-SNAPSHOT @ C:\Users\Administrator\eclipse-workspace\oracle\pom.xml.
+2023-02-20 17:37:21,661 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 17:37:21,663 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 17:37:21,666 [Worker-55: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 17:37:21,667 [Worker-55: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
+2023-02-20 17:37:22,918 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 17:37:22,919 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\main\resources
+2023-02-20 17:37:22,922 [Worker-51: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2023-02-20 17:37:22,923 [Worker-51: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Administrator\eclipse-workspace\oracle\src\test\resources
