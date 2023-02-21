@@ -21,7 +21,6 @@
     <fullyQualifiedTypeName name="org.eclipse.paho.client.mqttv3.MqttConnectOptions"/>
     <fullyQualifiedTypeName name="org.eclipse.paho.client.mqttv3.MqttMessage"/>
     <fullyQualifiedTypeName name="org.eclipse.paho.client.mqttv3.MqttCallback"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="org.json.JSONObject"/>
     <fullyQualifiedTypeName name="com.mongodb.client.MongoClients"/>
@@ -60,4 +59,5 @@
     <fullyQualifiedTypeName name="org.bson.Document"/>
     <fullyQualifiedTypeName name="day15.BookStore"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
 </qualifiedTypeNameHistroy>
