@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="day10.MemberDBImpl"/>
-    <fullyQualifiedTypeName name="day10.MemberDB"/>
-    <fullyQualifiedTypeName name="day10.AddressDBImpl"/>
-    <fullyQualifiedTypeName name="day10.AddressTable"/>
-    <fullyQualifiedTypeName name="day10.MemberTable"/>
-    <fullyQualifiedTypeName name="org.graalvm.compiler.core.common.FieldsScanner"/>
     <fullyQualifiedTypeName name="okhttp3.OkHttpClient"/>
     <fullyQualifiedTypeName name="day11.RestClient1"/>
     <fullyQualifiedTypeName name="okhttp3.Request"/>
@@ -50,14 +44,20 @@
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="java.lang.Deprecated"/>
     <fullyQualifiedTypeName name="day15.Book"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="day15.Print"/>
-    <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.bson.Document"/>
     <fullyQualifiedTypeName name="day15.BookStore"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="RestaurantMapper"/>
+    <fullyQualifiedTypeName name="mapper.RestaurantMapper1"/>
+    <fullyQualifiedTypeName name="connection.avc"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="dto.menu"/>
+    <fullyQualifiedTypeName name="dto.Menu"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Update"/>
 </qualifiedTypeNameHistroy>
