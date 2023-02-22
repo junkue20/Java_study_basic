@@ -4,14 +4,17 @@ public class Main {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int A = sc.nextInt();
-		int B = sc.nextInt();
-		int sum = 0;
-		while (A == 0 && B == 0) {
-			sum = A + B;
-		}
-		if(A == 0 && B == 0) {
+
+		while (1 > 0) {
+			int A = sc.nextInt();
+			int B = sc.nextInt();
+			if (A == 0 && B == 0) {
+				break;
+			}
+			int sum = A + B;
 			System.out.println(sum);
 		}
+
 	}
+
 }
