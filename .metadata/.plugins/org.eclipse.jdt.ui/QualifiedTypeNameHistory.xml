@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="okhttp3.Response"/>
-    <fullyQualifiedTypeName name="org.bson.json.JsonObject"/>
-    <fullyQualifiedTypeName name="org.json.JSONArray"/>
-    <fullyQualifiedTypeName name="java.lang.Iterable"/>
-    <fullyQualifiedTypeName name="java.util.Iterator"/>
-    <fullyQualifiedTypeName name="day11.Titanic"/>
-    <fullyQualifiedTypeName name="day12.TitanicDBImpl"/>
-    <fullyQualifiedTypeName name="org.eclipse.paho.client.mqttv3.MqttClient"/>
-    <fullyQualifiedTypeName name="org.eclipse.paho.client.mqttv3.MqttConnectOptions"/>
-    <fullyQualifiedTypeName name="org.eclipse.paho.client.mqttv3.MqttMessage"/>
     <fullyQualifiedTypeName name="org.eclipse.paho.client.mqttv3.MqttCallback"/>
     <fullyQualifiedTypeName name="org.json.JSONObject"/>
     <fullyQualifiedTypeName name="com.mongodb.client.MongoClients"/>
@@ -42,7 +32,6 @@
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="day15.Print"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="org.bson.Document"/>
     <fullyQualifiedTypeName name="day15.BookStore"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
@@ -51,13 +40,24 @@
     <fullyQualifiedTypeName name="mapper.RestaurantMapper1"/>
     <fullyQualifiedTypeName name="connection.avc"/>
     <fullyQualifiedTypeName name="dto.menu"/>
-    <fullyQualifiedTypeName name="dto.Menu"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Update"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="lombok.Data"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
     <fullyQualifiedTypeName name="mapper.PurchaseMapper"/>
     <fullyQualifiedTypeName name="dto.Purchase"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="java.beans.Transient"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Insert"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Param"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.params.ParameterizedTest"/>
+    <fullyQualifiedTypeName name="mapper.MenuMapper"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="dto.Restaurant"/>
+    <fullyQualifiedTypeName name="dto.Menu"/>
+    <fullyQualifiedTypeName name="java.security.MessageDigest"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Test"/>
+    <fullyQualifiedTypeName name="dto.Customer"/>
+    <fullyQualifiedTypeName name="test.CustomerTest"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="mapper.CustomerMapper"/>
 </qualifiedTypeNameHistroy>
