@@ -1,0 +1,707 @@
+{
+  "canvas": {
+    "version": "2.2.11",
+    "width": 2000,
+    "height": 2000,
+    "scrollTop": -116.33333333333331,
+    "scrollLeft": -179.16666666666666,
+    "zoomLevel": 0.9,
+    "show": {
+      "tableComment": true,
+      "columnComment": true,
+      "columnDataType": true,
+      "columnDefault": true,
+      "columnAutoIncrement": false,
+      "columnPrimaryKey": true,
+      "columnUnique": false,
+      "columnNotNull": true,
+      "relationship": true
+    },
+    "database": "Oracle",
+    "databaseName": "",
+    "canvasType": "ERD",
+    "language": "Java",
+    "tableCase": "pascalCase",
+    "columnCase": "camelCase",
+    "highlightTheme": "VS2015",
+    "bracketType": "none",
+    "setting": {
+      "relationshipDataTypeSync": true,
+      "relationshipOptimization": false,
+      "columnOrder": [
+        "columnName",
+        "columnDataType",
+        "columnNotNull",
+        "columnUnique",
+        "columnAutoIncrement",
+        "columnDefault",
+        "columnComment"
+      ]
+    },
+    "pluginSerializationMap": {}
+  },
+  "table": {
+    "tables": [
+      {
+        "name": "memberTB",
+        "comment": "회원테이블",
+        "columns": [
+          {
+            "name": "mem_id",
+            "comment": "아이디(이메일)",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 88.658203125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "19ae9ecd-608d-48eb-b4a0-f4576d1d7e61"
+          },
+          {
+            "name": "mem_pw",
+            "comment": "비밀번호",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "e6abecb0-7516-445c-bace-0d35fba4b408"
+          },
+          {
+            "name": "mem_adr",
+            "comment": "주소 (지역) ",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 69.8818359375,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b756a27e-a175-41a4-83f9-e4359df968b0"
+          },
+          {
+            "name": "mem_role",
+            "comment": "권한(의뢰자,봉사자)",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 118.27001953125,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b785754f-ab8f-4cea-8c25-ce546a0eba16"
+          },
+          {
+            "name": "mem_chk",
+            "comment": "탈퇴유무확인용(0,1)",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 119.72998046875,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a6c77531-0374-4b23-87b9-16a88d33ea64"
+          },
+          {
+            "name": "mem_rgd",
+            "comment": "가입일자",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ba856772-e637-49c1-849f-4ad70ba7a80b"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 191.2778,
+          "top": 132.1664,
+          "zIndex": 575,
+          "widthName": 66.2890625,
+          "widthComment": 67,
+          "color": "#00B3FF"
+        },
+        "visible": true,
+        "id": "b9158234-ed80-44c3-bbac-55ece202a673"
+      },
+      {
+        "name": "orderTB",
+        "comment": "의뢰테이블",
+        "columns": [
+          {
+            "name": "order_no",
+            "comment": "의뢰번호",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a20553f2-9517-4d18-be62-9e60575c894e"
+          },
+          {
+            "name": "order_title",
+            "comment": "의뢰명",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "bb74f913-9cc7-42c9-b166-e3ef15e614c7"
+          },
+          {
+            "name": "order_cont",
+            "comment": "의뢰내용",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.14990234375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "cf43d9f4-2fc9-4213-9599-f46bddc00f4e"
+          },
+          {
+            "name": "order_rgd",
+            "comment": "의뢰일시",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "a81272e9-57cd-481e-a847-e9b7ee8a9c40"
+          },
+          {
+            "name": "or_mem_id",
+            "comment": "의뢰회원아이디",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 67.025390625,
+              "widthComment": 93,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "2eb3e2fe-ffa8-4245-9898-53749eb045da"
+          },
+          {
+            "name": "shelter_id",
+            "comment": "기관아이디",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 67,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "5e76f31d-784e-45e0-be3a-934613178b40"
+          }
+        ],
+        "ui": {
+          "active": true,
+          "left": 203.3334,
+          "top": 545.7492,
+          "zIndex": 595,
+          "widthName": 60,
+          "widthComment": 67,
+          "color": "#FF954F"
+        },
+        "visible": true,
+        "id": "cc4832aa-c612-4b9f-95b9-813a150b0fb9"
+      },
+      {
+        "name": "dogTB",
+        "comment": "유기견테이블",
+        "columns": [
+          {
+            "name": "dog_id",
+            "comment": "유기견식별id",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 77.1181640625,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "b8185b73-7e2e-4434-9181-a63663ee6bba"
+          },
+          {
+            "name": "dog_age",
+            "comment": "유기견나이",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 67,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "88c406a2-946d-4912-8d6c-76d7a438b83f"
+          },
+          {
+            "name": "dog_kind",
+            "comment": "품종",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "11f9c133-7395-4f4f-92a3-b82abf62cb96"
+          },
+          {
+            "name": "dog_ill",
+            "comment": "질병유무",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "62e108e1-966e-48fa-9a9f-a9d182c382a6"
+          },
+          {
+            "name": "dog_notice",
+            "comment": "특이사항",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 65.60986328125,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "59e86d2f-c5d4-48c3-8f2d-95e17739ef55"
+          },
+          {
+            "name": "pro_shelter_name",
+            "comment": "보호중인기관명",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": true,
+              "pfk": false,
+              "widthName": 106.787109375,
+              "widthComment": 93,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c8187c0a-a810-4b86-9cbf-887df9938b68"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 772.3883,
+          "top": 128.8343,
+          "zIndex": 591,
+          "widthName": 60,
+          "widthComment": 80,
+          "color": "#FD5B54"
+        },
+        "visible": true,
+        "id": "f0d635bc-dd06-4f52-bb7a-b20d5077e9ca"
+      },
+      {
+        "name": "dogshelterTB",
+        "comment": "보호기관테이블",
+        "columns": [
+          {
+            "name": "shelter_id",
+            "comment": "기관아이디",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": true,
+              "unique": false,
+              "notNull": true
+            },
+            "ui": {
+              "active": false,
+              "pk": true,
+              "fk": false,
+              "pfk": false,
+              "widthName": 60,
+              "widthComment": 67,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "0b8d887c-585a-4174-b70c-772fa3218c4a"
+          },
+          {
+            "name": "shelter_pw",
+            "comment": "기관비밀번호",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 64.8671875,
+              "widthComment": 80,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "c89f1bf9-50df-4c51-891b-8605e03bc56e"
+          },
+          {
+            "name": "shelter_adr",
+            "comment": "기관 주소",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0380859375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "9df8374a-26cd-45dc-b17e-9870c3155a93"
+          },
+          {
+            "name": "shelter_rgd",
+            "comment": "등록일자",
+            "dataType": "",
+            "default": "",
+            "option": {
+              "autoIncrement": false,
+              "primaryKey": false,
+              "unique": false,
+              "notNull": false
+            },
+            "ui": {
+              "active": false,
+              "pk": false,
+              "fk": false,
+              "pfk": false,
+              "widthName": 67.0380859375,
+              "widthComment": 60,
+              "widthDataType": 60,
+              "widthDefault": 60
+            },
+            "id": "ebefabe8-8dd5-4e31-8815-497776f2fcc6"
+          }
+        ],
+        "ui": {
+          "active": false,
+          "left": 797.5279,
+          "top": 567.9997,
+          "zIndex": 594,
+          "widthName": 79.32080078125,
+          "widthComment": 93,
+          "color": "#00FFC6"
+        },
+        "visible": true,
+        "id": "ca5bfd7c-fb8e-4c3e-a674-94996e91c28b"
+      }
+    ],
+    "indexes": []
+  },
+  "memo": {
+    "memos": []
+  },
+  "relationship": {
+    "relationships": [
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "ca5bfd7c-fb8e-4c3e-a674-94996e91c28b",
+          "columnIds": [
+            "0b8d887c-585a-4174-b70c-772fa3218c4a"
+          ],
+          "x": 984.54694296875,
+          "y": 567.9997,
+          "direction": "top"
+        },
+        "end": {
+          "tableId": "f0d635bc-dd06-4f52-bb7a-b20d5077e9ca",
+          "columnIds": [
+            "c8187c0a-a810-4b86-9cbf-887df9938b68"
+          ],
+          "x": 985.7818546875,
+          "y": 320.8343,
+          "direction": "bottom"
+        },
+        "constraintName": "fk_dogsheltertb_to_dogtb",
+        "visible": true,
+        "id": "66b65045-fd1d-45c8-8005-8a0cc58c6d89"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "b9158234-ed80-44c3-bbac-55ece202a673",
+          "columnIds": [
+            "19ae9ecd-608d-48eb-b4a0-f4576d1d7e61"
+          ],
+          "x": 394.642790234375,
+          "y": 324.1664,
+          "direction": "bottom"
+        },
+        "end": {
+          "tableId": "cc4832aa-c612-4b9f-95b9-813a150b0fb9",
+          "columnIds": [
+            "2eb3e2fe-ffa8-4245-9898-53749eb045da"
+          ],
+          "x": 396.8460953125,
+          "y": 545.7492,
+          "direction": "top"
+        },
+        "constraintName": "fk_membertb_to_ordertb",
+        "visible": true,
+        "id": "43da6987-952f-4073-aeea-149f43a5cfa7"
+      },
+      {
+        "identification": false,
+        "relationshipType": "OneN",
+        "startRelationshipType": "Dash",
+        "start": {
+          "tableId": "ca5bfd7c-fb8e-4c3e-a674-94996e91c28b",
+          "columnIds": [
+            "0b8d887c-585a-4174-b70c-772fa3218c4a"
+          ],
+          "x": 797.5279,
+          "y": 643.4997,
+          "direction": "left"
+        },
+        "end": {
+          "tableId": "cc4832aa-c612-4b9f-95b9-813a150b0fb9",
+          "columnIds": [
+            "5e76f31d-784e-45e0-be3a-934613178b40"
+          ],
+          "x": 590.358790625,
+          "y": 641.7492,
+          "direction": "right"
+        },
+        "constraintName": "fk_dogsheltertb_to_ordertb",
+        "visible": true,
+        "id": "14961f02-e8b4-4f52-956e-007162cf7351"
+      }
+    ]
+  }
+}
