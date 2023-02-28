@@ -13,6 +13,7 @@ public class Main {// 빈칸수 별수 : 4 1 ,3 2, 2 3, 1 4, 0 5
 				System.out.print("*");
 			}
 			System.out.println();
+			System.err.println();
 		}
 	}
 }
