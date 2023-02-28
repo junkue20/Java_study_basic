@@ -9,7 +9,7 @@ public class Main {
 			int B = sc.nextInt();
 
 			System.out.print(A + B);
-
+			System.out.println();
 		}
 	}
 
