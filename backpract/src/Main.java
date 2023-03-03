@@ -9,16 +9,22 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer str = new StringTokenizer(br.readLine(), " "); // 입력받은 값에서 빈칸을 구분함.
 
-		int N = Integer.parseInt(str.nextToken());
-		int X = Integer.parseInt(str.nextToken()); // 차례대로 수열의 길이값 N, X 입력
+		long[] A = new long[9]; // 배열 총 길이, 9칸
 
 		str = new StringTokenizer(br.readLine(), " "); // 새로운 값 입력
-		
-		int[] A = new int[N];
+
 		for (int i = 0; i < A.length; i++) {
 			A[i] = Integer.parseInt(str.nextToken()); // 수열 A에 들어가는 값들
-			if (X > A[i]) {
-				System.out.print(A[i] + " "); // A에서 X보다 작은값들 출력. 
+		}
+
+		long max = 0;
+		for (int i = 0; i < A.length; i++) {
+			if (max < A[i]) {
+				max = A[i];
+				if (max == A[i]) {
+					System.out.println(max);
+					System.out.println(A[i]);
+				}
 			}
 		}
 	}
