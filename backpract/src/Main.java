@@ -5,21 +5,34 @@ import java.util.StringTokenizer;
 
 public class Main {
 
-	public static void main(String[] args) throws IOException { // 버퍼리더 사용시 반드시 예외처리 필요
+	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer str = new StringTokenizer(br.readLine(), " "); // 입력받은 값에서 빈칸을 구분함.
+		StringTokenizer str = new StringTokenizer(br.readLine(), " ");
 
 		int N = Integer.parseInt(str.nextToken());
-		int X = Integer.parseInt(str.nextToken()); // 차례대로 수열의 길이값 N, X 입력
-
-		str = new StringTokenizer(br.readLine(), " "); // 새로운 값 입력
-		
 		int[] A = new int[N];
-		for (int i = 0; i < A.length; i++) {
-			A[i] = Integer.parseInt(str.nextToken()); // 수열 A에 들어가는 값들
-			if (X > A[i]) {
-				System.out.print(A[i] + " "); // A에서 X보다 작은값들 출력. 
-			}
+
+		for (int I = 0; I < N; I++) {
+			A[I] = I + 1;
 		}
+
+		int M = Integer.parseInt(str.nextToken());
+
+		for (int I = 0; I < M; I++) { // 0부터 M까지 반복
+			str = new StringTokenizer(br.readLine(), " ");
+			int i = Integer.parseInt(str.nextToken());
+			int j = Integer.parseInt(str.nextToken());
+			
+			int k = A[i-1];
+			int l = A[j-1];
+			A[j-1] = k;
+			A[i-1] = l;
+			
+		}
+		for (int I = 0; I < N; I++) {
+
+			System.out.print(A[I] + " ");
+		}
+
 	}
 }
