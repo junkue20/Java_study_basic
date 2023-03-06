@@ -10,29 +10,13 @@ public class Main {
 		StringTokenizer str = new StringTokenizer(br.readLine(), " ");
 
 		int N = Integer.parseInt(str.nextToken());
-		int[] A = new int[N];
 
-		for (int I = 0; I < N; I++) {
-			A[I] = I + 1;
+		for (int i = N - 1; i > 0; i--) {
+			N = N * i;
 		}
-
-		int M = Integer.parseInt(str.nextToken());
-
-		for (int I = 0; I < M; I++) { // 0부터 M까지 반복
-			str = new StringTokenizer(br.readLine(), " ");
-			int i = Integer.parseInt(str.nextToken());
-			int j = Integer.parseInt(str.nextToken());
-			
-			int k = A[i-1];
-			int l = A[j-1];
-			A[j-1] = k;
-			A[i-1] = l;
-			
+		if (N == 0) {
+			N = 1;
 		}
-		for (int I = 0; I < N; I++) {
-
-			System.out.print(A[I] + " ");
-		}
-
+		System.out.println(N);
 	}
 }
