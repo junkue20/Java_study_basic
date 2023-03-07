@@ -9,14 +9,33 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer str = new StringTokenizer(br.readLine(), " ");
 
-		int N = Integer.parseInt(str.nextToken());
+		int[] A = new int[30];
+		for (int i = 0; i < A.length; i++) {
+			A[i] = i + 1;
+		}
 
-		for (int i = N - 1; i > 0; i--) {
-			N = N * i;
+		int[] B = new int[28];
+		for (int i = 0; i < B.length-1; i++) {
+			B[i] = Integer.parseInt(str.nextToken());
+			if(i < 27) {
+				str = new StringTokenizer(br.readLine(), " ");
+			}
 		}
-		if (N == 0) {
-			N = 1;
+
+		for (int i = 0; i < A.length; i++) {
+			for (int j = 0; j < B.length-1; i++) {
+				if (A[i] == B[j]) {
+					A[i] = 0;
+				}
+
+			}
 		}
-		System.out.println(N);
+		for (int i = 0; i < A.length; i++) {
+			if (A[i] != 0) {
+				System.out.println(A[i]);
+			}
+
+		}
+
 	}
 }
