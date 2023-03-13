@@ -922,9 +922,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1641.63916015625,
-          "top": 22.7618,
-          "zIndex": 2,
+          "left": 1542.8892,
+          "top": 955.2618,
+          "zIndex": 17,
           "widthName": 60,
           "widthComment": 60
         },
@@ -1052,10 +1052,10 @@
           }
         ],
         "ui": {
-          "active": false,
-          "left": 1646,
-          "top": 18.4364,
-          "zIndex": 1,
+          "active": true,
+          "left": 1544.75,
+          "top": 954.6864,
+          "zIndex": 18,
           "widthName": 76.42626953125,
           "widthComment": 100.2236328125
         },
@@ -1425,9 +1425,9 @@
         ],
         "ui": {
           "active": false,
-          "left": 1469.5234375,
-          "top": 0,
-          "zIndex": 3,
+          "left": 1460.7734,
+          "top": 957.5,
+          "zIndex": 16,
           "widthName": 92.29541015625,
           "widthComment": 60
         },
