@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-진짜 너무 힘드내요 ㅠㅠㅠ
+	home.jsp 테스트용
 </body>
 </html>

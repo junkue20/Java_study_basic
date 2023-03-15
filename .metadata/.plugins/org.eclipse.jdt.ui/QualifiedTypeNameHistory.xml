@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.awt.dnd.MouseDragGestureRecognizer"/>
-    <fullyQualifiedTypeName name="java.util.regex.MatchResult"/>
     <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
     <fullyQualifiedTypeName name="com.mongodb.client.model.Updates"/>
     <fullyQualifiedTypeName name="com.mongodb.client.result.UpdateResult"/>
@@ -50,7 +48,6 @@
     <fullyQualifiedTypeName name="dto.Shelter"/>
     <fullyQualifiedTypeName name="mapper.ShelterMapper"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.condition.DisabledIfSystemProperties"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="mapper.AdpbrdMapper"/>
     <fullyQualifiedTypeName name="dto.Adpbrd"/>
@@ -60,4 +57,7 @@
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="dto.Waitadp"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="dto.Member"/>
 </qualifiedTypeNameHistroy>

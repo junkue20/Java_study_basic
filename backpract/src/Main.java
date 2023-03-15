@@ -9,31 +9,23 @@ public class Main {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer str = new StringTokenizer(br.readLine(), " ");
 
-		int N = Integer.parseInt(str.nextToken());
-		int M = Integer.parseInt(str.nextToken());
-		int[] arr1 = new int[N];
-		int[] arr2 = new int[N];
+		int n = Integer.getInteger(str.nextToken()); // 배열 길이 첫줄 입력
+		int[] arr = new int[n];
 
-		for (int x = 0; x < N; x++) { // 0 1 2 3 4
-			arr1[x] = x + 1;
-			arr2[x] = x + 1;
+		str = new StringTokenizer(br.readLine(), " "); // 입력값 초기화 
+
+		for (int i = 0; i < arr.length; i++) { // 과목 점수 입력
+			arr[i] = Integer.getInteger(str.nextToken()); // 이후에 첫번째 행렬에 3개가 한꺼번에 들어가는 문제가 발생할 수 있음.
 		}
-		for (int x = 0; x < M; x++) {
-			str = new StringTokenizer(br.readLine(), " ");
-			int i = Integer.parseInt(str.nextToken()); // 1
-			int j = Integer.parseInt(str.nextToken()); // 5
-
-			for (int y = (i - 1); y < (j - 1); y++) {
-				arr1[y] = arr2[j - 1 - y];
-				if(y>(j-1-y)) {
-					break;
-				}
+		
+		int max = 0;
+		for (int i = 0; i< arr.length; i++) { // 최대값 
+			if(max < arr[i]) {
+				max = arr[i];
 			}
-			arr2 = arr1;
 		}
-		for (int x = 0; x < N; x++) {
-			System.out.print(arr1[x] + " ");
-		}
-
+		
+		
+		
 	}
 }
