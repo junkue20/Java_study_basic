@@ -1,7 +1,10 @@
 eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=C\:/Users/Administrator/eclipse/jee-2022-12/eclipse/
 org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Program Files/Eclipse Adoptium/jdk-11.0.18.10-hotspot/lib/jrt-fs.jar
 org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Program Files/Eclipse Adoptium/jdk-11.0.18.10-hotspot/lib/src.zip
 org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/Users/Administrator/.p2/pool/plugins/org.junit_4.13.2.v20211018-1956.jar
+org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/Administrator/.m2/repository
 org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
 org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
 org.eclipse.jdt.core.compiler.codegen.targetPlatform=17

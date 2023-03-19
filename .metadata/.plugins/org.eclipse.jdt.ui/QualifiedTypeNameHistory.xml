@@ -1,15 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.model.Updates"/>
-    <fullyQualifiedTypeName name="com.mongodb.client.result.UpdateResult"/>
-    <fullyQualifiedTypeName name="day14.BoardDB"/>
-    <fullyQualifiedTypeName name="day14.BoardDBImpl"/>
-    <fullyQualifiedTypeName name="day14.Board"/>
-    <fullyQualifiedTypeName name="java.util.HashMap"/>
-    <fullyQualifiedTypeName name="java.lang.Deprecated"/>
-    <fullyQualifiedTypeName name="day15.Book"/>
-    <fullyQualifiedTypeName name="day15.Print"/>
     <fullyQualifiedTypeName name="org.bson.Document"/>
     <fullyQualifiedTypeName name="day15.BookStore"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
@@ -19,8 +9,6 @@
     <fullyQualifiedTypeName name="dto.menu"/>
     <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Update"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
-    <fullyQualifiedTypeName name="lombok.Data"/>
-    <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
     <fullyQualifiedTypeName name="mapper.PurchaseMapper"/>
     <fullyQualifiedTypeName name="dto.Purchase"/>
     <fullyQualifiedTypeName name="java.beans.Transient"/>
@@ -48,7 +36,6 @@
     <fullyQualifiedTypeName name="dto.Shelter"/>
     <fullyQualifiedTypeName name="mapper.ShelterMapper"/>
     <fullyQualifiedTypeName name="org.junit.jupiter.api.condition.DisabledIfSystemProperties"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="mapper.AdpbrdMapper"/>
     <fullyQualifiedTypeName name="dto.Adpbrd"/>
     <fullyQualifiedTypeName name="java.util.List"/>
@@ -57,7 +44,20 @@
     <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
     <fullyQualifiedTypeName name="dto.Waitadp"/>
-    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="dto.Member"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="config.MyBatisContext"/>
+    <fullyQualifiedTypeName name="mapper.BoardMapper"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.WebServlet"/>
+    <fullyQualifiedTypeName name="mapper.MemberMapper"/>
+    <fullyQualifiedTypeName name="java.util.Date"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
+    <fullyQualifiedTypeName name="dto.Item"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.annotation.MultipartConfig"/>
+    <fullyQualifiedTypeName name="jakarta.servlet.http.Part"/>
+    <fullyQualifiedTypeName name="dto.ItemImage"/>
+    <fullyQualifiedTypeName name="mapper.BoardImageMapper"/>
 </qualifiedTypeNameHistroy>
