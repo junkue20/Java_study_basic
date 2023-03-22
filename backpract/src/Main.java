@@ -13,9 +13,11 @@ public class Main {
 		String str = br.readLine();
 
 		int sum = 0;
-		for (int y = 0; y <n; y++) {
-			sum += str.charAt(y)-'0';
+		for (int i = 0; i <n; i++) {
+			sum += str.charAt(i)-'0';
 		}
 		System.out.println(sum);
+		int num = 'A';
+		System.out.println(num);
 	}
 }
