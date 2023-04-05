@@ -6,21 +6,34 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="InputStreamReader"/>
+		<item key="selection" value="logoutWithKakao"/>
 		<list key="findhistory">
-			<item value="InputStreamReader"/>
-			<item value="shelter_pw"/>
-			<item value="shelter_password"/>
-			<item value="로 계산해야하는 데이터를 전송 (setter)"/>
+			<item value="logoutWithKakao"/>
+			<item value="&apos;"/>
+			<item value="topic"/>
+			<item value="201"/>
+			<item value="mast"/>
+			<item value="img"/>
+			<item value="nav"/>
+			<item value="."/>
+			<item value="title"/>
+			<item value="css"/>
+			<item value="href"/>
+			<item value="Pie Chart Example"/>
+			<item value="./"/>
+			<item value="jsp"/>
+			<item value=".jsp"/>
 		</list>
 		<list key="replacehistory">
-			<item value="shelter_pw"/>
+			<item value="&quot;"/>
 			<item value=""/>
+			<item value="html"/>
+			<item value="shelter_pw"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="417"/>
-		<item key="DIALOG_Y_ORIGIN" value="406"/>
+		<item key="DIALOG_X_ORIGIN" value="1546"/>
+		<item key="DIALOG_Y_ORIGIN" value="63"/>
 		<item key="DIALOG_WIDTH" value="322"/>
 		<item key="DIALOG_HEIGHT" value="394"/>
 		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>

@@ -1,0 +1,130 @@
+/* 구글폰트로 웹사이트 글꼴 변경 */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body {
+    min-width: 900px;
+    background-color: #f9f9f9;
+    min-height: 100vh; /* 100vw = 100% */
+    overflow-x: hidden; /* x축 스크롤 금지 */
+}
+
+.contents {
+    position: relative;
+    background-color: #003329;
+    padding: 50px 100px;
+}
+
+@media screen and (max-width : 800px) {
+    .body{
+        min-width: 720px;
+    }
+}
+@media screen and (min-width : 800px) and (min-width : 1150px) {
+    .body{
+        min-width: 700px;
+    }
+}
+@media screen and (max-width : 800px) {
+    .body{
+        min-width: 700px;
+    }
+}
+@media screen and (max-width : 800px) {
+    .body{
+        min-width: 700px;
+    }
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* 100vw = 100% */
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between; /* flex(grid 레이아웃) 꾸밀때 가로정렬 */
+    align-items: center; /* 수직 중앙정렬 */
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em; /* 2배 */
+    font-weight:  900;
+    color: #359381;
+    pointer-events: none; /* 마우스 커서를 올렸을 때 아무 이벤트를 주지 않겠다는 뜻 */
+}
+
+.navigation > a {
+    text-decoration: none; /* 언더바 삭제 */
+    color: #359370;
+    font-weight: 500; 
+    margin: 0px 10px;
+    padding: 5px 15px 8px 15px;
+    border-radius: 20px;
+}
+
+.navigation a:hover,
+.navigation a:active { /* 마우스 커서를 올려둘 때 효과 */
+    background-color: #359381;
+    color: #f9f9f9;
+}
+
+.parallax {
+    position: relative;
+    display: flex; /* flex 레이아웃 */
+    justify-content: center;
+    align-items: center; /* 수평 중앙정렬, 수직 중앙정렬 */
+    height: 100vh; /* ==100% */
+}
+
+.parallax img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100vw;
+    pointer-events: none;
+}
+
+#text {
+    position: absolute;
+    font-size: 5em; /* 5배 더 크게 */
+    font-weight: 900;
+    color: floralwhite;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.contents > h2 {
+    font-size: 3em; /* 3배 */
+    font-weight: 600;
+    text-align: center;
+    color: floralwhite;
+    margin-bottom: 10px;
+}
+
+.contents > p {
+    font-size: 1em;
+    font-weight: 300;
+    color: white;
+}
+
+footer {
+    position: relative;
+    width: 100%; height: 110px;
+    bottom: 0px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: #359381;
+}
+
+footer a {
+    text-decoration-line: none;
+    color: #003329;
+    display: inline-block;
+    margin: 0 10px 10px 10px;
+}

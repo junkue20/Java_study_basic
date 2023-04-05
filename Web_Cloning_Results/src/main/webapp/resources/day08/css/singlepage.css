@@ -1,0 +1,369 @@
+@charset "UTF-8";
+/* 구글폰트로 웹사이트 글자체 변경 */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+html {
+    scroll-padding-top: calc(4.5rem - 1px);
+}
+
+body {
+    letter-spacing: 0.063em;
+}
+
+a {
+    color:#64a19d;
+}
+
+
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: 0.25;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-weight: 550;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: calc(1.5rem + 1.5vw);
+    /* 계산으로 넓이를 변경 (1rem은 16px) */
+}
+
+@media screen and (min-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+        /* 2.5 배수 */
+    }
+}
+
+h2 {
+    font-size: calc(1.3rem + 0.9vw);
+}
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        font-size: 2.0rem;
+        /* 2 배수 */
+    }
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+ol,
+ul {
+    padding-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.footer {
+    padding: 5rem 0;
+}
+
+.contact-section {
+    padding-top: 5rem;
+}
+
+.contact-section .card {
+    border: 0;
+    border-bottom: 0.25rem solid #64a19d;
+}
+
+.contact-section .card h4 {
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+}
+
+.contact-section .card hr {
+    opacity: 1;
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 3rem;
+}
+
+.contact-section .social {
+    margin-top: 5rem;
+}
+
+.contact-section .social a {
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 100%;
+    line-height: 3rem;
+    /* 16px * 3 */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social a:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: black;
+}
+
+.contact-section .social a:active {
+    background-color: rgba(255, 255, 255, 0.2);
+
+    color: white;
+}
+
+.signup-section {
+    padding: 10rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%),
+        url('../images/bg-signup.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.signup-section .form-signup input {
+    box-shadow: 0 0.19rem 0.19rem 0 rgba(0, 0, 0, 0.1) !important;
+    /* !important == 무조건 적용되어야 하는 스타일! */
+    padding: 1.25rem 2rem;
+    height: auto;
+    font-size: 80%;
+    letter-spacing: 0.1rem;
+    border: 0;
+}
+
+.btn {
+    --bs-btn-bg: #64a19d;
+    box-shadow: 0 0.19rem 0.19rem 0 rgba(0, 0, 0, 0.1) !important;
+    /* !important == 무조건 적용되어야 하는 스타일! */
+    padding: 1.25rem 2rem;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: 0;
+}
+
+.btn:hover {
+    background-color: #558985;
+}
+
+.custom-color {
+    color: #64a19d;
+}
+
+.portfolios-section {
+    padding: 10rem 0;
+}
+
+.portfolios-section .featured-text {
+    padding: 2rem;
+}
+
+.portfolios-section .portfolio-text {
+    padding: 3rem;
+    font-size: 90%;
+}
+
+@media screen and (min-width: 992px) {
+    .portfolios-section .featured-text {
+        padding: 0 0 0 2rem;
+        /* 위, 오른쪽, 왼쪽 여백 */
+        border-left: 0.5rem solid #64a19d;
+    }
+
+    .portfolios-section .portfolio-text {
+        padding: 5rem;
+    }
+}
+
+.about-section {
+    padding-top: 10rem;
+    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8)100%);
+}
+
+.about-section p {
+    margin-bottom: 5rem;
+}
+
+.masterHead {
+    position: relative;
+    padding: 10rem 0;
+    width: 100vw;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    font-family: 'VarelaRound';
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%),
+        url('../images/bg-masthead.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.masterHead h1 {
+    font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* text-shadow: 2px 2px 2px rgba(0,0,0,0.4); */
+
+}
+
+.masterHead h2 {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1rem;
+
+}
+
+
+#mainNav {
+    min-height: 3.5rem;
+    background-color: #fff;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: #64a19d;
+    border: 1px solid #64a19d;
+}
+
+#mainNav .navbar-toggler:focus {
+    outline: none;
+}
+
+#mainNav .navbar-brand {
+    color: #000;
+    font-weight: 900;
+    padding: 0.9rem 0;
+}
+
+#githubBG:hover {
+    color: fade(#fff, 80%);
+    outline: none;
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+@media screen and (min-width: 990px) {
+    #mainNav {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #mainNav .navbar-brand {
+        color: rgba(255, 255, 255, 0.5);
+        padding: 0.5rem 0;
+    }
+
+    #mainNav .nav-link {
+        transition: none;
+        padding: 2rem 1.5rem;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    #mainNav .nav-link:hover {
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    #mainNav .nav-link:active {
+        color: white;
+    }
+
+    /* js에서 처리하는 메뉴부분 시작 */
+    /* 없는 클래스를 만드는 것이기 때문에 #mainNav .navbar-shrink 사이에
+       공백이 있으면 절대 안됨. */
+    #mainNav.navbar-shrink {
+        background-color: white;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand {
+        color: #000000;
+    }
+
+    #mainNav.navbar-shrink .nav-link {
+        color: #000;
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: 0.25rem solid transparent;
+    }
+
+    #mainNav.navbar-shrink .nav-link:hover {
+        color: #64a19d;
+    }
+
+    #mainNav.navbar-shrink .nav-link:active {
+        color: #558985;
+    }
+
+    #mainNav.navbar-shrink .nav-link.active {
+        color: #64a19d;
+        outline: none;
+        border-bottom: 0.25rem solid #64a19d;
+    }
+    /* js에서 처리하는 메뉴부분 끝 */
+}
+
+#instagramBG:hover {
+    background: linear-gradient(to bottom, #8e28d3, #fd1d1d, #fcb045);
+    color: white;
+}
+
+#instagramBG:active {
+    background:  linear-gradient(to bottom, #8e28d3, #fd1d1d, #fcb045);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#facebookBG:hover {
+    background-color: rgba(65, 105, 225, 1);
+    color: white;
+}
+
+#facebookBG:active {
+    background-color: rgba(65, 105, 225, 0.5);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#githubBG:hover {
+    background-color: white;
+    color: black;
+}
+
+#githubBG:active {
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+}
+
