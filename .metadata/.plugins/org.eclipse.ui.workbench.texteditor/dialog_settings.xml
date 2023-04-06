@@ -6,8 +6,9 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="logoutWithKakao"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="acount"/>
 			<item value="logoutWithKakao"/>
 			<item value="&apos;"/>
 			<item value="topic"/>
@@ -22,7 +23,6 @@
 			<item value="Pie Chart Example"/>
 			<item value="./"/>
 			<item value="jsp"/>
-			<item value=".jsp"/>
 		</list>
 		<list key="replacehistory">
 			<item value="&quot;"/>

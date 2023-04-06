@@ -49,7 +49,7 @@
 											<input type="text" class="form-control" id="writer"
 												for="floatingInput"> <label>작성자</label>
 										</div>
-										<a class="btn btn-primary btn-right" href="#!"
+										<a class="btn btn-primary btn-right" href="#"
 											onclick="getEditorContent()">글쓰기</a>
 									</form>
 								</div>
@@ -125,9 +125,52 @@
 			const writer = document.getElementById("writer");
 			const content = quill.root.innerHTML; // 위쪽의 editor 객체를 통해서 가져오기
 
-			console.log(title.value);
-			console.log(writer.value);
-			console.log(content)
+			/*   유효성 검사   */
+			if (title.length <= 0) { // 최소 1자 이상 입력해야 함. 
+				alert('제목을 입력하세요.')
+				title.focus();
+				return false; // 아래쪽 소스코드를 수행하지 않음. 함수가 종료됨.
+			}
+
+			if (writer.length <= 0) {
+				alert('작성자를 입력하세요.')
+				writer.focus();
+				return false;
+			}
+
+			/* 
+				<form action="write.do" metod="post">
+			 		<input type="text" name="title" value="실제입력값"></input>
+			 		<input type="text" name="content" value="실제입력값"></input>
+			 		<input type="text" name="writer" value="실제입력값"></input>
+				</form> 
+			 */
+
+			var form = document.createElement("form");
+			form.action = "write.do";
+			form.method = "post";
+			form.style.display = "none";
+
+			var input1 = document.createElement("input");
+			input1.type = "text";
+			input1.name = "title";
+			input1.value = title.value;
+			form.appendChild(input1);
+
+			var input2 = document.createElement("input");
+			input2.type = "text";
+			input2.name = "content";
+			input2.value = content;
+			form.appendChild(input2);
+
+			var input3 = document.createElement("input");
+			input3.type = "text";
+			input3.name = "writer";
+			input3.value = writer.value;
+			form.appendChild(input3);
+
+			document.body.appendChild(form);
+			form.submit();
 		}
 	</script>
 </body>
